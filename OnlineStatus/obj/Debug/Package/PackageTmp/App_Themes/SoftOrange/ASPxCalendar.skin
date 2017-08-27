@@ -1,0 +1,17 @@
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v15.1, Version=15.1.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register Assembly="DevExpress.Web.v15.1, Version=15.1.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+
+<dx:ASPxCalendar runat="server" SpriteCssFilePath="~/App_Themes/SoftOrange/{0}/sprite.css" CssFilePath="~/App_Themes/SoftOrange/{0}/styles.css" CssPostfix="SoftOrange">
+    <FooterStyle Spacing="16px" />
+    <HeaderStyle Spacing="1px" />
+    <ValidationSettings>
+        <ErrorFrameStyle ImageSpacing="4px">
+            <ErrorTextPaddings PaddingLeft="4px" />
+        </ErrorFrameStyle>
+    </ValidationSettings>
+    <ButtonStyle Width="37px" />
+    <LoadingPanelImage Url="~/App_Themes/SoftOrange/Web/Loading.gif" />
+    <SettingsLoadingPanel ImagePosition="Top" />
+    <LoadingPanelStyle ImageSpacing="8" />
+</dx:ASPxCalendar>
+

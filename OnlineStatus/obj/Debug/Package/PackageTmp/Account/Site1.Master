@@ -1,0 +1,65 @@
+<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site1.Master.vb" Inherits="OnlineStatus.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page" >
+         <div class="header" style="border-bottom: solid 5px #21420d; background-color: white; line-height: 60px">
+            <div class="title">
+               <a href="http://www.revenew.net" target= "_blank"><img src="../Images/mainlogo.png" alt="" style="line-height:95px; vertical-align:middle" /></a>
+            </div>
+            <div class="loginDisplay">
+            </div>
+            
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+            
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer" 
+
+
+    </div>
+    <table align = "center"><tr><td>
+         <!-- McAfee Secure Trustmark for www.revenew.net -->
+    <a target="_blank" href="https://www2.mcafeesecure.com/verify?host=www.revenew.net"><img class="mfes-trustmark" border="0" 
+    
+    src="//cdn.ywxi.net/meter/www.revenew.net/101.gif" width="125" height="55" title="McAfee SECURE sites help keep you safe from identity 
+    
+    theft, credit card fraud, spyware, spam, viruses and online scams" alt="McAfee SECURE sites help keep you safe from identity theft, 
+    
+    credit card fraud, spyware, spam, viruses and online scams" oncontextmenu="alert('Copying Prohibited by Law - McAfee Secure is a 
+    
+    Trademark of McAfee, Inc.'); return false;"></a>
+    
+    
+    <!-- End McAfee Secure Trustmark -->
+    </td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;
+    </td>
+    <td>
+    <div id="DigiCertClickID_cK7F3OOZ" data-language="en_US">
+              <a href="http://www.digicert.com/ssl.htm">SSL</a>
+    </div>
+    <script type="text/javascript">
+    var __dcid = __dcid || [];__dcid.push(["DigiCertClickID_cK7F3OOZ", "5", "m", "black", "cK7F3OOZ"]);(function(){var cid=document.createElement("script");cid.async=true;cid.src="//seal.digicert.com/seals/cascade/seal.min.js";var s = document.getElementsByTagName("script");var ls = s[(s.length - 1)];ls.parentNode.insertBefore(cid, ls.nextSibling);}());
+    </script>
+
+    </td>
+    </tr></table>
+    
+    
+</script>
+    </form>
+</body>
+</html>

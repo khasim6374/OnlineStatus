@@ -1,0 +1,3 @@
+New Field in Table 'tblUsers':-
+--------------------------------
+RevenewEmail	varchar(500)
