@@ -11,8 +11,8 @@
     }
 </script>
 <div class="grdBorder">
-    <div class="grdHeader">
-        Claim Summary</div>
+    <%--<div class="grdHeader">
+        Claim Summary</div>--%>
     <asp:GridView ID="grdClaimSummary" runat="server" Width="100%" BackColor="White"
         BorderStyle="Solid" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="None"
         ShowFooter="True" Font-Names="Calibri" BorderColor="#E8E8E8">

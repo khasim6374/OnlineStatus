@@ -25,8 +25,8 @@
     <tr>
         <td bgcolor="White"  width="80%">
             <div class="grdBorder">
-                <div class="grdHeader">
-                    Root Cause Analysis</div>
+                <%--<div class="grdHeader">
+                    Root Cause Analysis</div>--%>
                 <asp:GridView ID="grdRootCause" runat="server" Width="100%" BackColor="White" BorderStyle="Solid"
                     BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="None" ShowFooter="false"
                     Font-Names="Calibri" BorderColor="#E8E8E8">

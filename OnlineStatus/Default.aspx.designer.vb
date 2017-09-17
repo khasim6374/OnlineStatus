@@ -23,67 +23,13 @@ Partial Public Class _Default
     Protected WithEvents btnPdf As Global.DevExpress.Web.ASPxButton
 
     '''<summary>
-    '''claimsummary1 control.
+    '''nbMain control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents claimsummary1 As Global.OnlineStatus.claimsummary
-
-    '''<summary>
-    '''rootcauseanalysis1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents rootcauseanalysis1 As Global.OnlineStatus.rootcauseanalysis
-
-    '''<summary>
-    '''rootcauseanalysisbyprocess control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents rootcauseanalysisbyprocess As Global.OnlineStatus.rootcauseanalysisbyprocess
-
-    '''<summary>
-    '''businessunitanalysis1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents businessunitanalysis1 As Global.OnlineStatus.businessunitanalysis
-
-    '''<summary>
-    '''currentitemsunder1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents currentitemsunder1 As Global.OnlineStatus.currentitemsunder
-
-    '''<summary>
-    '''trAudit control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents trAudit As Global.System.Web.UI.HtmlControls.HtmlTableRow
-
-    '''<summary>
-    '''auditprogress1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents auditprogress1 As Global.OnlineStatus.auditprogress
+    Protected WithEvents nbMain As Global.DevExpress.Web.ASPxNavBar
 
     '''<summary>
     '''popClaims control.

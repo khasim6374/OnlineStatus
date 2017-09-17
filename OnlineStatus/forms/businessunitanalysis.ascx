@@ -14,8 +14,8 @@
     <tr>
         <td bgcolor="White" width="80%">
             <div class="grdBorder">
-                <div class="grdHeader">
-                    Business Unit Analysis</div>
+                <%--<div class="grdHeader">
+                    Business Unit Analysis</div>--%>
                 <asp:GridView ID="grdBusinessUnit" runat="server" Width="700px" BackColor="White"
                     BorderStyle="Solid" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="None"
                     ShowFooter="True" Font-Names="Calibri" BorderColor="#E8E8E8" AutoGenerateColumns="False">
@@ -55,7 +55,7 @@
                 </asp:GridView>
             </div>
         </td>
-        <td align="center" valign="middle">
+        <td align="center" valign="middle" bgcolor="#404040">
             <asp:Chart ID="crtBusinessUnit" runat="server" Height="250px" Width="450px" BackColor="Transparent"
                 BorderlineColor="Transparent">
                 <Series>

@@ -8,9 +8,9 @@
     }
 </style>
 <div class="grdBorder">
-    <div class="grdHeader" >
+    <%--<div class="grdHeader" >
         Audit Progress: Statement Solicitation
-    </div>
+    </div>--%>
 
     <table cellpadding="0" cellspacing="0" border="0" width="100%" style="color: black;
         font-weight: bold; font-size: 12px; border-style: solid; border-color: #e5e2e2;

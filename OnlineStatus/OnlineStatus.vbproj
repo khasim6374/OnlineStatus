@@ -162,10 +162,12 @@
     <Content Include="App_Themes\Youthful\Site.css" />
     <Content Include="ClaimDetails.aspx" />
     <Content Include="claimsubmission.aspx" />
+    <Content Include="ClaimSummary.aspx" />
     <Content Include="documentlibrary.aspx" />
     <Content Include="forms\auditprogress.ascx" />
     <Content Include="forms\businessunitanalysis.ascx" />
     <Content Include="forms\claimsummary.ascx" />
+    <Content Include="forms\projectresults.ascx" />
     <Content Include="forms\rootcauseanalysisbyprocess.ascx" />
     <Content Include="forms\currentitemsunder.ascx" />
     <Content Include="forms\rootcauseanalysis.ascx" />
@@ -276,6 +278,13 @@
       <DependentUpon>claimsubmission.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="ClaimSummary.aspx.designer.vb">
+      <DependentUpon>ClaimSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClaimSummary.aspx.vb">
+      <DependentUpon>ClaimSummary.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Default.aspx.vb">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -310,6 +319,13 @@
     </Compile>
     <Compile Include="forms\claimsummary.ascx.vb">
       <DependentUpon>claimsummary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forms\projectresults.ascx.designer.vb">
+      <DependentUpon>projectresults.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="forms\projectresults.ascx.vb">
+      <DependentUpon>projectresults.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="forms\rootcauseanalysisbyprocess.ascx.designer.vb">
@@ -1501,7 +1517,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>11910</DevelopmentServerPort>
+          <DevelopmentServerPort>7118</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

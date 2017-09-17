@@ -11,7 +11,7 @@ Public Class _Default
                 If contData.Tables(0).Rows.Count > 0 Then
                     Dim isdt = contData.Tables(0).Rows(0)(0)
                     If isdt = 1 Then
-                        trAudit.Visible = False
+                        nbMain.Groups(5).Visible = False
                     End If
                 End If
             End If

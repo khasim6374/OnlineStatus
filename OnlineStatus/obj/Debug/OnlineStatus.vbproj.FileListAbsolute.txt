@@ -196,7 +196,6 @@ E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\bin\de\DevExpress.XtraPrinting.v
 E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\bin\es\DevExpress.XtraPrinting.v15.1.resources.dll
 E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\bin\ja\DevExpress.XtraPrinting.v15.1.resources.dll
 E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\bin\ru\DevExpress.XtraPrinting.v15.1.resources.dll
-E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\obj\Debug\OnlineStatus.vbprojResolveAssemblyReference.cache
 E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\obj\Debug\OnlineStatus.Resources.resources
 E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\obj\Debug\OnlineStatus.rptRootcauseanalysisbyprocess.resources
 E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\obj\Debug\OnlineStatus.rptRootcauseanalysisChartByProcess.resources
@@ -215,3 +214,4 @@ E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\obj\Debug\OnlineStatus.dll.licen
 E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\obj\Debug\OnlineStatus.dll
 E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\obj\Debug\OnlineStatus.xml
 E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\obj\Debug\OnlineStatus.pdb
+E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\obj\Debug\OnlineStatus.vbprojResolveAssemblyReference.cache

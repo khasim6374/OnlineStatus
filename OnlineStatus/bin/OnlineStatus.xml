@@ -278,57 +278,9 @@ btnPdf control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OnlineStatus._Default.claimsummary1">
+</member><member name="F:OnlineStatus._Default.nbMain">
 	<summary>
-claimsummary1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OnlineStatus._Default.rootcauseanalysis1">
-	<summary>
-rootcauseanalysis1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OnlineStatus._Default.rootcauseanalysisbyprocess">
-	<summary>
-rootcauseanalysisbyprocess control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OnlineStatus._Default.businessunitanalysis1">
-	<summary>
-businessunitanalysis1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OnlineStatus._Default.currentitemsunder1">
-	<summary>
-currentitemsunder1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OnlineStatus._Default.trAudit">
-	<summary>
-trAudit control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OnlineStatus._Default.auditprogress1">
-	<summary>
-auditprogress1 control.
+nbMain control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -810,6 +762,38 @@ Used to sort self-referenced table's rows
 	<summary>
 TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
 </summary>
+</member><member name="F:OnlineStatus.ClaimSummary1.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.ClaimSummary1.grdClaimSummary">
+	<summary>
+grdClaimSummary control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.ClaimSummary1.popClaims">
+	<summary>
+popClaims control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.ClaimSummary1.PopupControlContentControl1">
+	<summary>
+PopupControlContentControl1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:OnlineStatus.paymentreview.auditprogress1">
 	<summary>
 auditprogress1 control.
@@ -829,6 +813,46 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:OnlineStatus.paymentreview.currentitemsunder1">
 	<summary>
 currentitemsunder1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.projectresults.GrossTotal">
+	<summary>
+GrossTotal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.projectresults.ClaimCount">
+	<summary>
+ClaimCount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.projectresults.NetTotal">
+	<summary>
+NetTotal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.projectresults.crtRecoveryStatus">
+	<summary>
+crtRecoveryStatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.projectresults.crtProjectResults">
+	<summary>
+crtProjectResults control.
 </summary>
 	<remarks>
 Auto-generated field.

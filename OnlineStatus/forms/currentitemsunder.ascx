@@ -1,8 +1,13 @@
 ﻿<%@ Control Language="vb" AutoEventWireup="false" CodeBehind="currentitemsunder.ascx.vb"
     Inherits="OnlineStatus.currentitemsunder" %>
 <div class="grdBorder">
-    <div class="grdHeader">
-        Current Items Under Review</div>
+    <%--<div class="grdHeader">
+        Current Items Under Review</div>--%>
+        <span style="font-weight: bold;">Current Items Under Review</span>
+    <div style="border: 1px solid beige;">
+        <Span style="margin-left:28%;">Payment Analysis</Span>
+        <Span style="margin-left:23%;">Statement Review</Span>
+    </div>
     <asp:GridView ID="grdCurrentItems" runat="server" Width="100%" BackColor="White"
         BorderStyle="Solid" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="None"
         ShowFooter="True" Font-Names="Calibri" BorderColor="#E8E8E8" AutoGenerateColumns="false">
@@ -24,11 +29,17 @@
                 ItemStyle-HorizontalAlign="Center" />
             <asp:BoundField DataField="Opportunity Amount" HeaderText="Opportunity Amount" DataFormatString="{0:c0}"
                 ItemStyle-HorizontalAlign="Right" SortExpression="Opportunity Amount" />
+
+                <asp:BoundField DataField="Issue Count2" HeaderText="Issue Count" SortExpression="Issue Count"
+                ItemStyle-HorizontalAlign="Center" />
+            <asp:BoundField DataField="Opportunity Amount2" HeaderText="Opportunity Amount" DataFormatString="{0:c0}"
+                ItemStyle-HorizontalAlign="Right" SortExpression="Opportunity Amount" />
+
             <asp:BoundField DataField="Probability" HeaderText="Probability" SortExpression="Probability"
                 DataFormatString="{0:F0}%" ItemStyle-HorizontalAlign="Right" />
-            <asp:BoundField DataField="Probablistic Amount" HeaderText="Probablistic Amount"
-                DataFormatString="{0:c0}" ItemStyle-HorizontalAlign="Right" SortExpression="Probablistic Amount" />
-            <asp:BoundField DataField="Comments" HeaderText="Comments" />
+            <asp:BoundField DataField="Projected Amount" HeaderText="Projected Amount"
+                DataFormatString="{0:c0}" ItemStyle-HorizontalAlign="Right" SortExpression="Projected Amount" />
+            <%--<asp:BoundField DataField="Comments" HeaderText="Comments" />--%>
         </Columns>
     </asp:GridView>
 </div>
