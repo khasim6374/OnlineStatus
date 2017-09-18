@@ -10,85 +10,95 @@
         popClaims.Show();
     }
 </script>
-<table  cellpadding="0" cellspacing="0" border="0">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
     <tr>
-        <td bgcolor="White" width="33%" align="center">
-            <p>Claim Summary</p>
-            <asp:Label runat="server" ID="GrossTotal" Text=""></asp:Label><br />
-            <%--<asp:LinkButton runat="server" ID="ClaimCount" Text=""></asp:LinkButton>--%>
-            <asp:HyperLink runat="server" ID="ClaimCount" Text=""></asp:HyperLink>
-            <p>Net Value (less fees)</p>
-            <asp:Label runat="server" ID="NetTotal" Text=""></asp:Label>
+        <td width="33%" align="center">
+            <div class="grdBorder" style="height:246px;background-color:White;border:none;padding-left:8px;">
+                <p style="font-weight: bold;margin-top: 0px;">Claim Summary</p>
+                <div style="font-weight:bold;font-size:large;margin-top: 45px;">
+                    <asp:Label runat="server" ID="GrossTotal" Text=""></asp:Label>
+                </div><br />
+                <%--<asp:LinkButton runat="server" ID="ClaimCount" Text=""></asp:LinkButton>--%>
+                <div style="font-weight:bold;font-size:small;">
+                    <asp:HyperLink runat="server" ID="ClaimCount" Text=""></asp:HyperLink>
+                    <p>Net Value (less fees)</p>
+                    <asp:Label runat="server" ID="NetTotal" Text=""></asp:Label>
+                </div>
+            </div>
         </td>
-        <td width="33%" align="center" bgcolor="#404040">
-            <asp:Chart ID="crtRecoveryStatus" runat="server" Height="261px" Width="450px" BackColor="Transparent"
-                BorderlineColor="Transparent" Palette="None" 
-                PaletteCustomColors="255, 128, 128; ForestGreen; Blue; Yellow; Maroon; Olive; 192, 0, 192; Aqua; Gray; 128, 64, 0; 255, 192, 128; 192, 192, 255">
-                <Series>
-                    <asp:Series ChartType="Pie" Name="Series2" ChartArea="ChartArea2" BorderColor="White"
-                        IsValueShownAsLabel="True" LabelFormat="C0" Legend="Legend1" CustomProperties="CollectedSliceExploded=True" LabelBackColor="Transparent" LabelForeColor="White">
-                    </asp:Series>
-                </Series>
-                <ChartAreas>
-                    <asp:ChartArea Name="ChartArea2" BackColor="Transparent">
-                        <AxisY>
-                            <LabelStyle ForeColor="LightGray" />
-                        </AxisY>
-                        <AxisX>
-                            <LabelStyle ForeColor="LightGray" />
-                        </AxisX>
-                        <AxisX2>
-                            <LabelStyle ForeColor="LightGray" />
-                        </AxisX2>
-                        <AxisY2>
-                            <LabelStyle ForeColor="LightGray" />
-                        </AxisY2>
-                    </asp:ChartArea>
-                </ChartAreas>
-                <Legends>
-                    <asp:Legend BackColor="Transparent" ForeColor="White" Name="Legend1" ShadowColor="White">
-                    </asp:Legend>
-                </Legends>
-                <Titles>
-                    <asp:Title Font="Microsoft Sans Serif, 10pt, style=Bold" ForeColor="White" Name="Recovery Status"
-                        Text="Recovery Status">
-                    </asp:Title>
-                </Titles>
-            </asp:Chart>
+        <td width="33%" align="center">
+            <div class="grdBorder" style="border:none;">
+                <asp:Chart ID="crtRecoveryStatus" runat="server" Height="263px" Width="450px"
+                    BorderlineColor="Transparent" Palette="None" 
+                    PaletteCustomColors="48, 165, 146; 241, 176, 38; 252, 217, 69">
+                    <Series>
+                        <asp:Series ChartType="Pie" Name="Series2" ChartArea="ChartArea2" BorderColor="White"
+                            IsValueShownAsLabel="True" LabelFormat="C0" Legend="Legend1" CustomProperties="CollectedSliceExploded=True" LabelForeColor="Black">
+                        </asp:Series>
+                    </Series>
+                    <ChartAreas>
+                        <asp:ChartArea Name="ChartArea2" BackColor="Transparent">
+                            <AxisY>
+                                <LabelStyle ForeColor="LightGray" />
+                            </AxisY>
+                            <AxisX>
+                                <LabelStyle ForeColor="LightGray" />
+                            </AxisX>
+                            <AxisX2>
+                                <LabelStyle ForeColor="LightGray" />
+                            </AxisX2>
+                            <AxisY2>
+                                <LabelStyle ForeColor="LightGray" />
+                            </AxisY2>
+                        </asp:ChartArea>
+                    </ChartAreas>
+                    <Legends>
+                        <asp:Legend  ForeColor="Black" Name="Legend1" ShadowColor="White">
+                        </asp:Legend>
+                    </Legends>
+                    <Titles>
+                        <asp:Title Font="Microsoft Sans Serif, 10pt, style=Bold" ForeColor="Black" Name="Recovery Status"
+                            Text="Recovery Status">
+                        </asp:Title>
+                    </Titles>
+                </asp:Chart>
+            </div>
         </td>
-        <td align="center" valign="middle" width="33%" bgcolor="#404040">
-            <asp:Chart ID="crtProjectResults" runat="server" Height="250px" Width="450px" BackColor="Transparent"
-                BorderlineColor="Transparent">
-                <Series>
-                    <asp:Series Name="Series3" YValueType="Auto" ChartArea="ChartArea3" BorderColor="White"
-                        Color="#27610d" LabelForeColor="White" 
-                        MarkerBorderColor="224, 224, 224" LabelFormat="C0">
-                    </asp:Series>
-                </Series>
-                <ChartAreas>
-                    <asp:ChartArea Name="ChartArea3" BackColor="Transparent" BorderColor="Red" 
-                        IsSameFontSizeForAllAxes="True">
-                        <AxisY LineColor="White" InterlacedColor="White" 
-                            IntervalAutoMode="VariableCount">
-                            <MajorGrid LineColor="White" />
-                            <MinorGrid LineColor="White" />
-                            <MajorTickMark LineColor="Transparent" />
-                            <LabelStyle ForeColor="LightGray" Format="C0" />
-                        </AxisY>
-                        <AxisX IsLabelAutoFit="False" LineColor="White">
-                            <MajorGrid LineColor="Transparent" />
-                            <MinorGrid LineColor="White" />
-                            <MajorTickMark LineColor="Transparent" />
-                            <LabelStyle Angle="45" Interval="1" ForeColor="LightGray" />
-                        </AxisX>
-                    </asp:ChartArea>
-                </ChartAreas>
-                <Titles>
-                    <asp:Title Font="Microsoft Sans Serif, 10pt, style=Bold" ForeColor="White" Name="Title1"
-                        Text="Benchmarking">
-                    </asp:Title>
-                </Titles>
-            </asp:Chart>
+        <td align="center" valign="middle" width="33%">
+            <div class="grdBorder" style="border:none;margin-left: -8px;margin-right: -8px;">
+                <asp:Chart ID="crtProjectResults" runat="server" Height="263px" Width="450px"
+                    BorderlineColor="Transparent">
+                    <Series>
+                        <asp:Series Name="Series3" YValueType="Auto" ChartArea="ChartArea3" BorderColor="White"
+                            Color="48, 165, 146" LabelForeColor="Black" Palette="None"
+                            MarkerBorderColor="224, 224, 224" LabelFormat="C0">
+                        </asp:Series>
+                    </Series>
+                    <ChartAreas>
+                        <asp:ChartArea Name="ChartArea3" BorderColor="Red" 
+                            IsSameFontSizeForAllAxes="True">
+                            <AxisY LineColor="White" InterlacedColor="White" 
+                                IntervalAutoMode="VariableCount">
+                                <MajorGrid LineColor="#b4b7ba" />
+                                <MinorGrid LineColor="#b4b7ba" />
+                                <MajorTickMark LineColor="Transparent" />
+                                <LabelStyle ForeColor="Black" Format="C0" />
+                            </AxisY>
+                            <AxisX IsLabelAutoFit="False" LineColor="#b4b7ba">
+                                <MajorGrid LineColor="Transparent" />
+                                <MinorGrid LineColor="White" />
+                                <MajorTickMark LineColor="Transparent" />
+                                <LabelStyle Angle="45" Interval="1" ForeColor="Black" />
+                            </AxisX>
+                        </asp:ChartArea>
+                    </ChartAreas>
+                    <Titles>
+                        <asp:Title Font="Microsoft Sans Serif, 10pt, style=Bold" ForeColor="Black" Name="Title1"
+                            Text="Benchmarking">
+                        </asp:Title>
+                    </Titles>
+                </asp:Chart>
+            </div>
         </td>
     </tr>
 </table>

@@ -5,8 +5,8 @@
         Current Items Under Review</div>--%>
         <span style="font-weight: bold;">Current Items Under Review</span>
     <div style="border: 1px solid beige;">
-        <Span style="margin-left:28%;">Payment Analysis</Span>
-        <Span style="margin-left:23%;">Statement Review</Span>
+        <span style="margin-left:28%;">Payment Analysis</span>
+        <span style="margin-left:23%;">Statement Review</span>
     </div>
     <asp:GridView ID="grdCurrentItems" runat="server" Width="100%" BackColor="White"
         BorderStyle="Solid" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="None"

@@ -15,12 +15,17 @@ Public Class rootcauseanalysis
         Try
             Dim sqlDb As New SqlDb
             Dim dtSet As New DataSet
-            dtSet = sqlDb.GetDataSet("ORRootcause_sp", New SqlParameter("@database", sqlDb.GetUserDataBase()))
+            Dim param As SqlParameter() = {New SqlParameter("@database", sqlDb.GetUserDataBase()), New SqlParameter("@Cat", "NoCat")}
+            dtSet = sqlDb.GetDataSet("ORRootcause_sp", param)
             grdRootCause.DataSourceID = Nothing
             grdRootCause.DataSource = dtSet
             grdRootCause.DataBind()
-            crtRootCause.DataSource = dtSet
-            crtRootCause.Series("Series1").XValueMember = "Root Cause"
+
+            Dim dtSet1 As New DataSet
+            Dim param1 As SqlParameter() = {New SqlParameter("@database", sqlDb.GetUserDataBase()), New SqlParameter("@Cat", "Cat")}
+            dtSet1 = sqlDb.GetDataSet("ORRootcause_sp", param1)
+            crtRootCause.DataSource = dtSet1
+            crtRootCause.Series("Series1").XValueMember = "Category"
             crtRootCause.Series("Series1").YValueMembers = "TotalGross"
            
             crtRootCause.DataBind()

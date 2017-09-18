@@ -15,7 +15,7 @@
         <td bgcolor="White" width="80%">
             <div class="grdBorder">
                 <%--<div class="grdHeader">
-                    Business Unit Analysis</div>--%>
+                    Business Unit Analysis</div>--%><span style="font-weight: bold;">Business Unit Analysis</span>
                 <asp:GridView ID="grdBusinessUnit" runat="server" Width="700px" BackColor="White"
                     BorderStyle="Solid" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="None"
                     ShowFooter="True" Font-Names="Calibri" BorderColor="#E8E8E8" AutoGenerateColumns="False">
@@ -55,35 +55,35 @@
                 </asp:GridView>
             </div>
         </td>
-        <td align="center" valign="middle" bgcolor="#404040">
-            <asp:Chart ID="crtBusinessUnit" runat="server" Height="250px" Width="450px" BackColor="Transparent"
+        <td align="center" valign="middle" bgcolor="White">
+            <asp:Chart ID="crtBusinessUnit" runat="server" Height="250px" Width="450px"
                 BorderlineColor="Transparent">
                 <Series>
                     <asp:Series Name="Series1" YValueType="Auto" ChartArea="ChartArea1" BorderColor="White"
-                        Color="#27610d" LabelForeColor="White" 
+                        Color="48, 165, 146" LabelForeColor="Black" 
                         MarkerBorderColor="224, 224, 224" LabelFormat="C0">
                     </asp:Series>
                 </Series>
                 <ChartAreas>
-                    <asp:ChartArea Name="ChartArea1" BackColor="Transparent" BorderColor="Red" 
+                    <asp:ChartArea Name="ChartArea1" BorderColor="Red" 
                         IsSameFontSizeForAllAxes="True">
                         <AxisY LineColor="White" InterlacedColor="White" 
                             IntervalAutoMode="VariableCount">
-                            <MajorGrid LineColor="White" />
-                            <MinorGrid LineColor="White" />
+                            <MajorGrid LineColor="#b4b7ba" />
+                            <MinorGrid LineColor="#b4b7ba" />
                             <MajorTickMark LineColor="Transparent" />
-                            <LabelStyle ForeColor="LightGray" Format="C0" />
+                            <LabelStyle ForeColor="Black" Format="C0" />
                         </AxisY>
-                        <AxisX IsLabelAutoFit="False" LineColor="White">
+                        <AxisX IsLabelAutoFit="False" LineColor="#b4b7ba">
                             <MajorGrid LineColor="Transparent" />
                             <MinorGrid LineColor="White" />
                             <MajorTickMark LineColor="Transparent" />
-                            <LabelStyle Angle="45" Interval="1" ForeColor="LightGray" />
+                            <LabelStyle Angle="45" Interval="1" ForeColor="Black" />
                         </AxisX>
                     </asp:ChartArea>
                 </ChartAreas>
                 <Titles>
-                    <asp:Title Font="Microsoft Sans Serif, 10pt, style=Bold" ForeColor="White" Name="Title1"
+                    <asp:Title Font="Microsoft Sans Serif, 10pt, style=Bold" ForeColor="Black" Name="Title1"
                         Text="Gross Recoveries by Business Unit">
                     </asp:Title>
                 </Titles>

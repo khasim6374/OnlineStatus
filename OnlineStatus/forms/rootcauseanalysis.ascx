@@ -27,6 +27,7 @@
             <div class="grdBorder">
                 <%--<div class="grdHeader">
                     Root Cause Analysis</div>--%>
+                    <span style="font-weight: bold;">Root Cause Analysis</span>
                 <asp:GridView ID="grdRootCause" runat="server" Width="100%" BackColor="White" BorderStyle="Solid"
                     BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="None" ShowFooter="false"
                     Font-Names="Calibri" BorderColor="#E8E8E8">
@@ -43,13 +44,13 @@
                 </asp:GridView>
             </div>
         </td>
-        <td align="center" valign="middle" bgcolor="#404040">
-            <asp:Chart ID="crtRootCause" runat="server" Height="261px" Width="450px" BackColor="Transparent"
+        <td align="center" valign="middle" bgcolor="White">
+            <asp:Chart ID="crtRootCause" runat="server" Height="261px" Width="450px"
                 BorderlineColor="Transparent" Palette="None" 
-                PaletteCustomColors="255, 128, 128; ForestGreen; Blue; Yellow; Maroon; Olive; 192, 0, 192; Aqua; Gray; 128, 64, 0; 255, 192, 128; 192, 192, 255">
+                PaletteCustomColors="48, 165, 146; 241, 176, 38; 252, 217, 69">
                 <Series>
                     <asp:Series ChartType="Pie" Name="Series1" ChartArea="ChartArea1" BorderColor="White"
-                        IsValueShownAsLabel="True" LabelFormat="{0:}%" Legend="Legend1" CustomProperties="CollectedSliceExploded=True" LabelBackColor="Transparent" LabelForeColor="White">
+                        IsValueShownAsLabel="True" LabelFormat="{0:}%" Legend="Legend1" CustomProperties="CollectedSliceExploded=True" LabelForeColor="Black">
                     </asp:Series>
                 </Series>
                 <ChartAreas>
@@ -69,12 +70,12 @@
                     </asp:ChartArea>
                 </ChartAreas>
                 <Legends>
-                    <asp:Legend BackColor="Transparent" ForeColor="White" Name="Legend1" ShadowColor="White">
+                    <asp:Legend ForeColor="Black" Name="Legend1" ShadowColor="White">
                     </asp:Legend>
                 </Legends>
                 <Titles>
-                    <asp:Title Font="Microsoft Sans Serif, 10pt, style=Bold" ForeColor="White" Name="Gross Recoveries by Root Cause"
-                        Text="Gross Recoveries by Root Cause">
+                    <asp:Title Font="Microsoft Sans Serif, 10pt, style=Bold" ForeColor="Black" Name="Gross Recoveries by Category"
+                        Text="Gross Recoveries by Category">
                     </asp:Title>
                 </Titles>
             </asp:Chart>

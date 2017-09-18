@@ -11,29 +11,29 @@
     <%--<div class="grdHeader" >
         Audit Progress: Statement Solicitation
     </div>--%>
-
+    <span style="font-weight: bold;">Statement Collection</span>
     <table cellpadding="0" cellspacing="0" border="0" width="100%" style="color: black;
         font-weight: bold; font-size: 12px; border-style: solid; border-color: #e5e2e2;
         border-width: 0px">
-        <tr bgcolor="#404040" style="color:white">
+        <tr style="color:white">
             <td align="center">
-                <asp:Label ID="Label1" runat="server" Text="Vendor Count"></asp:Label>
+                <asp:Label ID="Label1" ForeColor="Black" runat="server" Text="Vendor Count"></asp:Label>
             </td>
             <td align="center">
-                <asp:Label ID="Label2" runat="server" Text="Total Spend"></asp:Label>
+                <asp:Label ID="Label2" ForeColor="Black" runat="server" Text="Total Spend"></asp:Label>
             </td>
             <td align="center">
-                <asp:Label ID="Label3" runat="server" Text="Total Transaction Count"></asp:Label>
+                <asp:Label ID="Label3" ForeColor="Black" runat="server" Text="Total Transaction Count"></asp:Label>
             </td>
         </tr>
-        <tr bgcolor="#404040">
+        <tr >
             <td align="center">
                 <asp:Chart ID="crtVendorCount" runat="server" CssClass="chartStyle"
                     Height="150px" Width="275px" Palette="None"
-                    PaletteCustomColors="39, 97, 13; 218, 150, 148" BackColor="Transparent">
+                    PaletteCustomColors="48, 165, 146; 241, 176, 38" BackColor="Transparent">
                     <Series>
                         <asp:Series ChartType="Pie" Name="Series1" IsValueShownAsLabel="True"
-                            Legend="Legend1" LabelFormat="N0" BorderColor="White" LabelForeColor="White">
+                            Legend="Legend1" LabelFormat="N0" BorderColor="White" LabelForeColor="Black">
                         </asp:Series>
                     </Series>
                     <ChartAreas>
@@ -41,7 +41,7 @@
                         </asp:ChartArea>
                     </ChartAreas>
                     <Legends>
-                        <asp:Legend Docking="Bottom" Name="Legend1" BackColor="Transparent" ForeColor="White" Alignment="Center">
+                        <asp:Legend Docking="Bottom" Name="Legend1" ForeColor="Black" Alignment="Center">
                         </asp:Legend>
                     </Legends>
                 </asp:Chart>
@@ -49,10 +49,10 @@
             <td align="center">
                 <asp:Chart ID="crtTotalSpend" runat="server" CssClass="chartStyle"
                     Height="150px" Width="275px" Palette="None"
-                    PaletteCustomColors="39, 97, 13; 218, 150, 148" BackColor="Transparent">
+                    PaletteCustomColors="48, 165, 146; 241, 176, 38" BackColor="Transparent">
                     <Series>
                         <asp:Series ChartType="Pie" Name="Series1" IsValueShownAsLabel="True"
-                            Legend="Legend1" LabelFormat="C0" BorderColor="White" LabelForeColor="White">
+                            Legend="Legend1" LabelFormat="C0" BorderColor="White" LabelForeColor="Black">
                         </asp:Series>
                     </Series>
                     <ChartAreas>
@@ -60,7 +60,7 @@
                         </asp:ChartArea>
                     </ChartAreas>
                     <Legends>
-                        <asp:Legend Docking="Bottom" Name="Legend1" BackColor="Transparent" ForeColor="White" Alignment="Center">
+                        <asp:Legend Docking="Bottom" Name="Legend1" ForeColor="Black" Alignment="Center">
                         </asp:Legend>
                     </Legends>
                 </asp:Chart>
@@ -68,10 +68,10 @@
             <td align="center">
                 <asp:Chart ID="crtTotalTransaction" runat="server" CssClass="chartStyle"
                     Height="150px" Width="275px" Palette="None"
-                    PaletteCustomColors="39, 97, 13; 218, 150, 148" BackColor="Transparent">
+                    PaletteCustomColors="48, 165, 146; 241, 176, 38" BackColor="Transparent">
                     <Series>
                         <asp:Series ChartType="Pie" Name="Series1" IsValueShownAsLabel="True"
-                            Legend="Legend1" LabelFormat="N0" BorderColor="White" LabelForeColor="White">
+                            Legend="Legend1" LabelFormat="N0" BorderColor="White" LabelForeColor="Black">
                         </asp:Series>
                     </Series>
                     <ChartAreas>
@@ -79,7 +79,7 @@
                         </asp:ChartArea>
                     </ChartAreas>
                     <Legends>
-                        <asp:Legend Docking="Bottom" Name="Legend1" BackColor="Transparent" ForeColor="White" Alignment="Center">
+                        <asp:Legend Docking="Bottom" Name="Legend1" ForeColor="Black" Alignment="Center">
                         </asp:Legend>
                     </Legends>
                 </asp:Chart>

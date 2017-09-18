@@ -28,7 +28,7 @@
     <div class="mainview">
     <table cellpadding="0" cellspacing="0" border="0" width="100%">
         <tr>
-            <td style="background-color:white">
+            <td style="background-color:#e8e9ea">
                 <div style="float: right;margin-right:15px ">            
                     <dx:ASPxButton ID="btnPdf" runat="server" Cursor="pointer" BackColor="Transparent" Border-BorderWidth="0" BackgroundImage-ImageUrl="~/images/trans.gif" CssClass="NoStyle" EnableTheming="False" ToolTip="Export to Pdf">                
                         <Image Url="~/images/pdf.png"></Image>
@@ -69,41 +69,44 @@
         </tr>--%>
     </table>
     <dx:ASPxNavBar ID="nbMain" runat="server" AllowSelectItem="True" EnableAnimation="True"
-            Width="100%">
+            Width="100%" BackColor="#e8e9ea">
             <GroupHeaderStyle HorizontalAlign="Left" />
             <ItemStyle HorizontalAlign="Left" />
             <Groups>
-                <dx:NavBarGroup Text="Project Results" Expanded="false">
+                <dx:NavBarGroup Text="Project Results" HeaderStyle-Font-Size="Medium" HeaderStyle-HorizontalAlign="Center" HeaderStyle-BackColor="White" Expanded="true">
                     <ContentTemplate>
                         <%--<uc1:claimsummary ID="claimsummary2" runat="server" />--%>
                         <uc6:projectresults ID="projectresults1" runat="server" />
-                    </ContentTemplate>
-                </dx:NavBarGroup>
-                <dx:NavBarGroup Text="Root Cause Analysis" Expanded="false">
-                    <ContentTemplate>
                         <uc2:rootcauseanalysis ID="rootcauseanalysis1" runat="server" />
-                    </ContentTemplate>
-                </dx:NavBarGroup>
-                <dx:NavBarGroup Text="Process Analysis" Expanded="false">
-                    <ContentTemplate>
-                        <uc1:rootcauseanalysisbyprocess runat="server" ID="rootcauseanalysisbyprocess" />
-                    </ContentTemplate>
-                </dx:NavBarGroup>
-                <dx:NavBarGroup Text="Business Unit Analysis" Expanded="false">
-                    <ContentTemplate>
                         <uc3:businessunitanalysis ID="businessunitanalysis1" runat="server" />
                     </ContentTemplate>
                 </dx:NavBarGroup>
-                <dx:NavBarGroup Text="Work In Progress" Expanded="true">
+                <%--<dx:NavBarGroup Text="Root Cause Analysis" Expanded="false">
+                    <ContentTemplate>
+                        <uc2:rootcauseanalysis ID="rootcauseanalysis1" runat="server" />
+                    </ContentTemplate>
+                </dx:NavBarGroup>--%>
+                <%--<dx:NavBarGroup Text="Process Analysis" Expanded="false">
+                    <ContentTemplate>
+                        <uc1:rootcauseanalysisbyprocess runat="server" ID="rootcauseanalysisbyprocess" />
+                    </ContentTemplate>
+                </dx:NavBarGroup>--%>
+                <%--<dx:NavBarGroup Text="Business Unit Analysis" Expanded="false">
+                    <ContentTemplate>
+                        <uc3:businessunitanalysis ID="businessunitanalysis1" runat="server" />
+                    </ContentTemplate>
+                </dx:NavBarGroup>--%>
+                <dx:NavBarGroup Text="Work In Progress" HeaderStyle-Font-Size="Medium" HeaderStyle-HorizontalAlign="Center" HeaderStyle-BackColor="White" Expanded="true">
                     <ContentTemplate>
                         <uc4:currentitemsunder ID="currentitemsunder1" runat="server" />
-                    </ContentTemplate>
-                </dx:NavBarGroup>
-                <dx:NavBarGroup Text="Statement Collection" Expanded="false">
-                    <ContentTemplate>
                         <uc5:auditprogress ID="auditprogress1" runat="server" />
                     </ContentTemplate>
                 </dx:NavBarGroup>
+                <%--<dx:NavBarGroup Text="Statement Collection" Expanded="false">
+                    <ContentTemplate>
+                        <uc5:auditprogress ID="auditprogress1" runat="server" />
+                    </ContentTemplate>
+                </dx:NavBarGroup>--%>
             </Groups>
         </dx:ASPxNavBar>
         </div>

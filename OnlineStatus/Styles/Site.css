@@ -286,8 +286,9 @@ h3 {
 }
 
 .grdBorder {
-    /*border: #808080 5px solid;*/
+    border: #808080 1px solid;
     padding: 8px;
+    margin-bottom: 8px;
 }
 
 .grdHeaderBg {
