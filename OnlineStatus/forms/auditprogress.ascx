@@ -7,7 +7,7 @@
         height: 500px;
     }
 </style>
-<div class="grdBorder">
+<div class="grdBorder" style="background-color: white;">
     <%--<div class="grdHeader" >
         Audit Progress: Statement Solicitation
     </div>--%>

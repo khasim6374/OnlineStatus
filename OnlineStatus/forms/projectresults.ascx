@@ -4,7 +4,7 @@
         var height = Math.max(0, document.documentElement.clientHeight);
         popClaims.SetHeight(height - 15);
         var width = Math.max(0, document.documentElement.clientWidth);
-        popClaims.SetWidth(width - 507);
+        popClaims.SetWidth(width - 250);
         popClaims.SetHeaderText('Claim Summary');
         popClaims.SetContentUrl('ClaimSummary.aspx?height='+height);
         popClaims.Show();
@@ -13,8 +13,8 @@
 <table width="100%" cellpadding="0" cellspacing="0" border="0">
     <tr>
         <td width="33%" align="center">
-            <div class="grdBorder" style="height:246px;background-color:White;border:none;padding-left:8px;">
-                <p style="font-weight: bold;margin-top: 0px;">Claim Summary</p>
+            <div class="grdBorder" style="height:246px;background-color:White;border:#808080 1px solid;padding-left:8px;">
+                <p style="font-weight: bold;margin-top: 0px;font-size: small;">Claim Summary</p>
                 <div style="font-weight:bold;font-size:large;margin-top: 45px;">
                     <asp:Label runat="server" ID="GrossTotal" Text=""></asp:Label>
                 </div><br />
@@ -29,7 +29,7 @@
         <td width="33%" align="center">
             <div class="grdBorder" style="border:none;">
                 <asp:Chart ID="crtRecoveryStatus" runat="server" Height="263px" Width="450px"
-                    BorderlineColor="Transparent" Palette="None" 
+                    BorderlineColor="#808080" BorderlineDashStyle="Solid" Palette="None" 
                     PaletteCustomColors="48, 165, 146; 241, 176, 38; 252, 217, 69">
                     <Series>
                         <asp:Series ChartType="Pie" Name="Series2" ChartArea="ChartArea2" BorderColor="White"
@@ -67,7 +67,7 @@
         <td align="center" valign="middle" width="33%">
             <div class="grdBorder" style="border:none;margin-left: -8px;margin-right: -8px;">
                 <asp:Chart ID="crtProjectResults" runat="server" Height="263px" Width="450px"
-                    BorderlineColor="Transparent">
+                    BorderlineColor="#808080" BorderlineDashStyle="Solid">
                     <Series>
                         <asp:Series Name="Series3" YValueType="Auto" ChartArea="ChartArea3" BorderColor="White"
                             Color="48, 165, 146" LabelForeColor="Black" Palette="None"

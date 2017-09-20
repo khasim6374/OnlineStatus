@@ -217,7 +217,7 @@
 			</cellstyle>
                 </dx:GridViewDataMemoColumn>
                 <dx:GridViewDataTextColumn FieldName="Claim Status" VisibleIndex="14" 
-                    ToolTip="Claim Status">
+                    ToolTip="Revenew Status" Caption="Revenew Status">
                     <EditItemTemplate>
                         <asp:Label ID="Label17" runat="server" Text='<%# Eval("[Claim Status]") %>'></asp:Label>
                     </EditItemTemplate>
@@ -239,13 +239,13 @@
                     <CellStyle HorizontalAlign="Center">
                     </CellStyle>
                 </dx:GridViewDataTextColumn>
-                <dx:GridViewDataTextColumn Caption="Process" FieldName="Dup or Statement" 
+                <%--<dx:GridViewDataTextColumn Caption="Process" FieldName="Dup or Statement" 
                     ShowInCustomizationForm="True" VisibleIndex="18">
                     <EditItemTemplate>
                         <dx:ASPxLabel ID="ASPxLabel176" runat="server" Text='<%# Eval("[Dup or Statement]")%>'>
                         </dx:ASPxLabel>
                     </EditItemTemplate>
-                </dx:GridViewDataTextColumn>
+                </dx:GridViewDataTextColumn>--%>
                 <dx:GridViewDataTextColumn FieldName="Vendor Number" 
                     ShowInCustomizationForm="True" VisibleIndex="7" ReadOnly="True">
                     <EditItemTemplate>
@@ -448,7 +448,7 @@
 			</cellstyle>
                 </dx:GridViewDataMemoColumn>
                 <dx:GridViewDataTextColumn FieldName="Claim Status" VisibleIndex="14" 
-                    ToolTip="Claim Status">
+                    ToolTip="Revenew Status" Caption="Revenew Status">
                     <EditItemTemplate>
                         <asp:Label ID="Label17" runat="server" Text='<%# Eval("[Claim Status]") %>'></asp:Label>
                     </EditItemTemplate>
@@ -486,13 +486,13 @@
                             Text='<%# Eval("ModifiedOn", "{0:d}") %>'></asp:Label>
                     </EditItemTemplate>
                 </dx:GridViewDataDateColumn>
-                <dx:GridViewDataTextColumn Caption="Process" FieldName="Dup or Statement" 
+                <%--<dx:GridViewDataTextColumn Caption="Process" FieldName="Dup or Statement" 
                     ShowInCustomizationForm="True" VisibleIndex="20">
                     <EditItemTemplate>
                         <dx:ASPxLabel ID="ASPxLabel176" runat="server" Text='<%# Eval("[Dup or Statement]")%>'>
                         </dx:ASPxLabel>
                     </EditItemTemplate>
-                </dx:GridViewDataTextColumn>
+                </dx:GridViewDataTextColumn>--%>
                 <dx:GridViewDataTextColumn FieldName="Vendor Number" ReadOnly="True" 
                     ShowInCustomizationForm="True" VisibleIndex="7">
                     <EditItemTemplate>
@@ -660,7 +660,7 @@
                     <cellstyle wrap="True">
 		</cellstyle>
                 </dx:GridViewDataMemoColumn>
-                <dx:GridViewDataTextColumn FieldName="Claim Status" VisibleIndex="14" ToolTip="Claim Status">
+                <dx:GridViewDataTextColumn FieldName="Claim Status" VisibleIndex="14" ToolTip="Revenew Status" Caption="Revenew Status">
                     <EditItemTemplate>
                         <asp:Label ID="Label17" runat="server" Text='<%# Eval("[Claim Status]") %>'></asp:Label>
                     </EditItemTemplate>
@@ -707,13 +707,13 @@
                                            <asp:Label ID="Label188" runat="server" Text='Accepted'></asp:Label>
                                         </EditItemTemplate>
                                     </dx:GridViewDataTextColumn>
-                                   <dx:GridViewDataTextColumn Caption="Process" FieldName="Dup or Statement" 
+                                   <%--<dx:GridViewDataTextColumn Caption="Process" FieldName="Dup or Statement" 
                     ShowInCustomizationForm="True" VisibleIndex="21">
                     <EditItemTemplate>
                         <dx:ASPxLabel ID="ASPxLabel176" runat="server" Text='<%# Eval("[Dup or Statement]")%>'>
                         </dx:ASPxLabel>
                     </EditItemTemplate>
-                </dx:GridViewDataTextColumn>
+                </dx:GridViewDataTextColumn>--%>
                                     <dx:GridViewDataTextColumn FieldName="Vendor Number" ReadOnly="True" 
                                         ShowInCustomizationForm="True" VisibleIndex="7">
                                         <EditItemTemplate>
@@ -887,7 +887,7 @@
                                     <dx:GridViewDataMemoColumn Caption="Remarks (Client_Update)" FieldName="Remarks" ShowInCustomizationForm="True" ToolTip="Remarks (Client Update)" VisibleIndex="3" Width="100px">
                                     <cellstyle wrap="True"></cellstyle>
                                     </dx:GridViewDataMemoColumn>
-                                    <dx:GridViewDataTextColumn FieldName="Claim Status" ShowInCustomizationForm="True" ToolTip="Claim Status" VisibleIndex="14">
+                                    <dx:GridViewDataTextColumn FieldName="Claim Status" ShowInCustomizationForm="True" ToolTip="Revenew Status" Caption="Revenew Status" VisibleIndex="14">
                                         <EditItemTemplate>
                                             <asp:Label ID="Label199" runat="server" Text='<%# Eval("[Claim Status]") %>'></asp:Label>
                                         </EditItemTemplate>
@@ -911,12 +911,12 @@
                                         <CellStyle HorizontalAlign="Center">
                                         </CellStyle>
                                     </dx:GridViewDataTextColumn>
-                                    <dx:GridViewDataTextColumn Caption="Process" FieldName="Dup or Statement" ShowInCustomizationForm="True" VisibleIndex="18">
+                                    <%--<dx:GridViewDataTextColumn Caption="Process" FieldName="Dup or Statement" ShowInCustomizationForm="True" VisibleIndex="18">
                                         <EditItemTemplate>
                                             <dx:ASPxLabel ID="ASPxLabel177" runat="server" Text='<%# Eval("[Dup or Statement]")%>'>
                                             </dx:ASPxLabel>
                                         </EditItemTemplate>
-                                    </dx:GridViewDataTextColumn>
+                                    </dx:GridViewDataTextColumn>--%>
                                     <dx:GridViewDataTextColumn FieldName="Vendor Number" ReadOnly="True" ShowInCustomizationForm="True" VisibleIndex="7">
                                         <EditItemTemplate>
                                             <dx:ASPxLabel ID="ASPxLabel178" runat="server" Text='<%# Eval("[Vendor Number]")%>'>

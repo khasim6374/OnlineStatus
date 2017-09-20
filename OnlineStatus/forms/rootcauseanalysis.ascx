@@ -22,12 +22,12 @@
     }
 </script>
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-        <td bgcolor="White"  width="80%">
-            <div class="grdBorder">
+    <tr style="height: 1px;">
+        <td width="80%">
+            <div class="grdBorder" style="background-color: white;">
                 <%--<div class="grdHeader">
                     Root Cause Analysis</div>--%>
-                    <span style="font-weight: bold;">Root Cause Analysis</span>
+                <span style="font-weight: bold;">Root Cause Analysis</span>
                 <asp:GridView ID="grdRootCause" runat="server" Width="100%" BackColor="White" BorderStyle="Solid"
                     BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="None" ShowFooter="false"
                     Font-Names="Calibri" BorderColor="#E8E8E8">
@@ -44,41 +44,43 @@
                 </asp:GridView>
             </div>
         </td>
-        <td align="center" valign="middle" bgcolor="White">
-            <asp:Chart ID="crtRootCause" runat="server" Height="261px" Width="450px"
-                BorderlineColor="Transparent" Palette="None" 
-                PaletteCustomColors="48, 165, 146; 241, 176, 38; 252, 217, 69">
-                <Series>
-                    <asp:Series ChartType="Pie" Name="Series1" ChartArea="ChartArea1" BorderColor="White"
-                        IsValueShownAsLabel="True" LabelFormat="{0:}%" Legend="Legend1" CustomProperties="CollectedSliceExploded=True" LabelForeColor="Black">
-                    </asp:Series>
-                </Series>
-                <ChartAreas>
-                    <asp:ChartArea Name="ChartArea1" BackColor="Transparent">
-                        <AxisY>
-                            <LabelStyle ForeColor="LightGray" />
-                        </AxisY>
-                        <AxisX>
-                            <LabelStyle ForeColor="LightGray" />
-                        </AxisX>
-                        <AxisX2>
-                            <LabelStyle ForeColor="LightGray" />
-                        </AxisX2>
-                        <AxisY2>
-                            <LabelStyle ForeColor="LightGray" />
-                        </AxisY2>
-                    </asp:ChartArea>
-                </ChartAreas>
-                <Legends>
-                    <asp:Legend ForeColor="Black" Name="Legend1" ShadowColor="White">
-                    </asp:Legend>
-                </Legends>
-                <Titles>
-                    <asp:Title Font="Microsoft Sans Serif, 10pt, style=Bold" ForeColor="Black" Name="Gross Recoveries by Category"
-                        Text="Gross Recoveries by Category">
-                    </asp:Title>
-                </Titles>
-            </asp:Chart>
+        <td align="center" valign="middle" style="padding-left: 8px;height: inherit;" >
+            <div class="grdBorder" style="background-color: white;height: 97%;">
+                <asp:Chart ID="crtRootCause" runat="server" Height="261px" Width="432px"
+                    BorderlineColor="Transparent" Palette="None" 
+                    PaletteCustomColors="48, 165, 146; 241, 176, 38; 252, 217, 69">
+                    <Series>
+                        <asp:Series ChartType="Pie" Name="Series1" ChartArea="ChartArea1" BorderColor="White"
+                            IsValueShownAsLabel="True" LabelFormat="{0:}%" Legend="Legend1" CustomProperties="CollectedSliceExploded=True" LabelForeColor="Black">
+                        </asp:Series>
+                    </Series>
+                    <ChartAreas>
+                        <asp:ChartArea Name="ChartArea1" BackColor="Transparent">
+                            <AxisY>
+                                <LabelStyle ForeColor="LightGray" />
+                            </AxisY>
+                            <AxisX>
+                                <LabelStyle ForeColor="LightGray" />
+                            </AxisX>
+                            <AxisX2>
+                                <LabelStyle ForeColor="LightGray" />
+                            </AxisX2>
+                            <AxisY2>
+                                <LabelStyle ForeColor="LightGray" />
+                            </AxisY2>
+                        </asp:ChartArea>
+                    </ChartAreas>
+                    <Legends>
+                        <asp:Legend ForeColor="Black" Name="Legend1" ShadowColor="White">
+                        </asp:Legend>
+                    </Legends>
+                    <Titles>
+                        <asp:Title Font="Microsoft Sans Serif, 10pt, style=Bold" ForeColor="Black" Name="Gross Recoveries by Category"
+                            Text="Gross Recoveries by Category">
+                        </asp:Title>
+                    </Titles>
+                </asp:Chart>
+            </div>
         </td>
     </tr>
 </table>

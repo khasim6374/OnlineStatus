@@ -81,11 +81,11 @@ Public Class currentitemsunder
                 e.Row.Cells(6).Font.Bold = True
             End If
         End If
-        If e.Row.RowType = DataControlRowType.Header Then
-            e.Row.Cells(2).HorizontalAlign = HorizontalAlign.Right
-            e.Row.Cells(3).HorizontalAlign = HorizontalAlign.Right
-            e.Row.Cells(4).HorizontalAlign = HorizontalAlign.Right
-            e.Row.Cells(5).HorizontalAlign = HorizontalAlign.Left
-        End If
+        'If e.Row.RowType = DataControlRowType.Header Then
+        '    e.Row.Cells(2).HorizontalAlign = HorizontalAlign.Right
+        '    e.Row.Cells(3).HorizontalAlign = HorizontalAlign.Right
+        '    e.Row.Cells(4).HorizontalAlign = HorizontalAlign.Right
+        '    e.Row.Cells(5).HorizontalAlign = HorizontalAlign.Left
+        'End If
     End Sub
 End Class

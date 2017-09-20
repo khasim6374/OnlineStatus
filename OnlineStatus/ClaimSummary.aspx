@@ -26,7 +26,7 @@
             var height = Math.max(0, document.documentElement.clientHeight);
             popClaims.SetHeight(height - 15);
             var width = Math.max(0, document.documentElement.clientWidth);
-            popClaims.SetWidth(width - 507);
+            popClaims.SetWidth(width - 250);
             popClaims.Hide();
             popClaims.SetHeaderText('Claim Details');
             popClaims.SetContentUrl('ClaimDetails.aspx?sdate=' + subDate + '&cstatus=' + creditStatus + '&height=' + height); popClaims.Show();

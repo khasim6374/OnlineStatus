@@ -69,7 +69,7 @@
         </tr>--%>
     </table>
     <dx:ASPxNavBar ID="nbMain" runat="server" AllowSelectItem="True" EnableAnimation="True"
-            Width="100%" BackColor="#e8e9ea">
+            Width="100%" BackColor="#e8e9ea" Paddings-PaddingTop="0">
             <GroupHeaderStyle HorizontalAlign="Left" />
             <ItemStyle HorizontalAlign="Left" />
             <Groups>
