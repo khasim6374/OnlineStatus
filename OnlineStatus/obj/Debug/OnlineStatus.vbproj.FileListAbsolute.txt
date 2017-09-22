@@ -143,9 +143,6 @@ C:\Users\Basil\Documents\T2\Valero\projects\OnlineStatus\OnlineStatus\obj\Debug\
 C:\Users\Basil\Documents\T2\Valero\projects\OnlineStatus\OnlineStatus\obj\Debug\OnlineStatus.xml
 C:\Users\Basil\Documents\T2\Valero\projects\OnlineStatus\OnlineStatus\obj\Debug\OnlineStatus.pdb
 C:\Users\Basil\Documents\T2\Valero\projects\OnlineStatus\OnlineStatus\obj\Debug\OnlineStatus.dll.licenses
-E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\bin\OnlineStatus.dll
-E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\bin\OnlineStatus.pdb
-E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\bin\OnlineStatus.xml
 E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\bin\DevExpress.Data.v15.1.dll
 E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\bin\DevExpress.Docs.v15.1.dll
 E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\bin\DevExpress.Office.v15.1.Core.dll
@@ -214,4 +211,7 @@ E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\obj\Debug\OnlineStatus.dll.licen
 E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\obj\Debug\OnlineStatus.dll
 E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\obj\Debug\OnlineStatus.xml
 E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\obj\Debug\OnlineStatus.pdb
+E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\bin\OnlineStatus.dll
+E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\bin\OnlineStatus.pdb
+E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\bin\OnlineStatus.xml
 E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\obj\Debug\OnlineStatus.vbprojResolveAssemblyReference.cache

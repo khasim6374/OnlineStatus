@@ -280,8 +280,66 @@ Public Class claimsubmission
         dtSet1 = sqlDb1.GetDataSet("spORStatusUpdate", New SqlParameter("@ClaimID", e.NewValues("Claim_ID")), New SqlParameter("@Database", sqlDb1.GetUserDataBase()), New SqlParameter("@Status", getStatus(e.NewValues("Status"))), New SqlParameter("@UserId", Context.User.Identity.Name), New SqlParameter("@Description", e.NewValues("Remarks")))
     End Sub
 
-    
     Protected Sub grdClaimSubmissionAll_PreRender(sender As Object, e As EventArgs) Handles grdClaimSubmissionAll.PreRender
         CType(sender, ASPxGridView).FilterExpression = ""
+    End Sub
+
+    Protected Sub grdClaimSubmissionPending_HtmlDataCellPrepared(sender As Object, e As ASPxGridViewTableDataCellEventArgs)
+        If e.DataColumn.FieldName.Equals("CreditStatus") And e.CellValue IsNot System.DBNull.Value Then
+            If e.CellValue.Contains("Taken") Then
+                e.Cell.Text = "Recovered"
+            End If
+            If e.CellValue.Contains("Booked") Then
+                e.Cell.Text = "Pending"
+            End If
+            If e.CellValue.Contains("Not Booked or Null") Then
+                e.Cell.Text = "Not Entered"
+            End If
+        End If
+    End Sub
+    Protected Sub grdClaimSubmission_HtmlDataCellPrepared(sender As Object, e As ASPxGridViewTableDataCellEventArgs)
+        If e.DataColumn.FieldName.Equals("CreditStatus") And e.CellValue IsNot System.DBNull.Value Then
+            If e.CellValue.Contains("Taken") Then
+                e.Cell.Text = "Recovered"
+            End If
+            If e.CellValue.Contains("Booked") Then
+                e.Cell.Text = "Pending"
+            End If
+            If e.CellValue.Contains("Not Booked or Null") Then
+                e.Cell.Text = "Not Entered"
+            End If
+        End If
+    End Sub
+    Protected Sub grdClaimSubmissionAccepted_HtmlDataCellPrepared(sender As Object, e As ASPxGridViewTableDataCellEventArgs)
+        If e.DataColumn.FieldName.Equals("CreditStatus") And e.CellValue IsNot System.DBNull.Value Then
+            If e.CellValue.Contains("Taken") Then
+                e.Cell.Text = "Recovered"
+            End If
+            If e.CellValue.Contains("Booked") Then
+                e.Cell.Text = "Pending"
+            End If
+            If e.CellValue.Contains("Not Booked or Null") Then
+                e.Cell.Text = "Not Entered"
+            End If
+        End If
+    End Sub
+    Protected Sub grdClaimSubmissionAll_HtmlDataCellPrepared(sender As Object, e As ASPxGridViewTableDataCellEventArgs)
+        If e.DataColumn.FieldName.Equals("CreditStatus") And e.CellValue IsNot System.DBNull.Value Then
+            If e.CellValue.Contains("Taken") Then
+                e.Cell.Text = "Recovered"
+            End If
+            If e.CellValue.Contains("Booked") Then
+                e.Cell.Text = "Pending"
+            End If
+            If e.CellValue.Contains("Not Booked or Null") Then
+                e.Cell.Text = "Not Entered"
+            End If
+        End If
+    End Sub
+    Protected Sub grdClaimSubmissionPending_StartRowEditing(sender As Object, e As DevExpress.Web.Data.ASPxStartRowEditingEventArgs)
+        Dim lst As Object() = TryCast(grdClaimSubmissionPending.GetRowValuesByKeyValue(e.EditingKeyValue, New String() {"Claim_ID", "CreditStatus"}), Object())
+        If lst(1).ToString().Contains("Taken") Then
+            'e.Cancel = True
+        End If
     End Sub
 End Class

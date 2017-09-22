@@ -1,0 +1,91 @@
+<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.master.vb" Inherits="OnlineStatus.Site" %>
+
+<%@ Register Assembly="DevExpress.Web.v15.1, Version=15.1.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent1" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .tblMnu {
+            border: none;
+            width: 150px;
+        }
+    </style>
+    <script type="text/javascript">
+
+
+
+        function test() {
+            var url = window.location.pathname;
+            var myPageName = url.substring(url.lastIndexOf('/') + 1);
+            var lilist = document.getElementById('ctrlmenu');
+            var alist = lilist.getElementsByTagName('a');
+            for (i = 0; i < alist.length; i++) {
+                if (alist[i].getAttribute("href") == myPageName)
+                    alist[i].className = 'ActiveMenu';
+                else
+                    alist[i].className = 'defaultmenu';
+            }
+        }
+
+    </script>
+</head>
+<body onload="test();">
+    <form runat="server">
+        <div class="page">
+            <div class="header">
+                <div class="title">
+                    <img src="Images/mainlogo.png" alt="Revenew" style="vertical-align: middle" />
+                </div>
+                <div class="loginDisplay">
+                    <asp:Image ID="imgUserLogo" runat="server" Style="vertical-align: middle" />
+                </div>
+                <div class="auditdb" id="auditdb" runat="server">
+                    <dx:ASPxComboBox ID="lstDb" AutoPostBack="true" runat="server" TextField="AuditName" ValueField="DatabaseName"></dx:ASPxComboBox>
+                </div>
+            </div>
+            <div class="subheader">
+                <div class="menu" id="ctrlmenu">
+                    <a href="Default.aspx"
+                        class="defaultmenu">Status Report</a>
+                    <a href="claimsubmission.aspx" class="defaultmenu">Claim Submissions</a> <a href="invoicesubmission.aspx" class="defaultmenu">Invoice Submissions</a>
+                    <a href="documentlibrary.aspx" class="defaultmenu">Document Library</a>
+                    <a href="Statements.aspx" runat="server" id="stMenu" class="defaultmenu">Statements</a>
+                    <%--  <a href="ActionItem.aspx" class="defaultmenu">Action Items/Admin</a> --%>
+                </div>
+                <div class="subheaderRight">
+                    <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                        <AnonymousTemplate>
+                            [ <a href="~/Account/Login.aspx" id="HeadLoginStatus" runat="server">Log In</a>
+                            ]
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            Welcome <span class="bold">
+                                <asp:LoginName ID="HeadLoginName" runat="server" />
+                            </span>| 
+                        <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Logout"
+                            LogoutPageUrl="~/" ForeColor="White" Font-Underline="False" />
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                </div>
+            </div>
+            <asp:ContentPlaceHolder ID="MainContent1" runat="server" />
+            <table width="100%" cellpadding="0" cellspacing="0" class="tblMain">
+                <tr>
+                    <td colspan="2" style="background-color: #fff;">
+                        <asp:ContentPlaceHolder ID="SubContent" runat="server" />
+                    </td>
+                </tr>
+            </table>
+            <div class="clear">
+            </div>
+        </div>
+        <div class="footer">
+        </div>
+    </form>
+</body>
+</html>

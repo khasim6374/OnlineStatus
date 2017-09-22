@@ -26,6 +26,7 @@ Partial Public Class rptclaimsubmission
         Me.XrTable1 = New DevExpress.XtraReports.UI.XRTable()
         Me.XrTableRow1 = New DevExpress.XtraReports.UI.XRTableRow()
         Me.XrTableCell1 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableCell14 = New DevExpress.XtraReports.UI.XRTableCell()
         Me.XrTableCell2 = New DevExpress.XtraReports.UI.XRTableCell()
         Me.XrTableCell3 = New DevExpress.XtraReports.UI.XRTableCell()
         Me.XrTableCell4 = New DevExpress.XtraReports.UI.XRTableCell()
@@ -39,10 +40,10 @@ Partial Public Class rptclaimsubmission
         Me.TopMargin = New DevExpress.XtraReports.UI.TopMarginBand()
         Me.BottomMargin = New DevExpress.XtraReports.UI.BottomMarginBand()
         Me.PageHeader = New DevExpress.XtraReports.UI.PageHeaderBand()
-        Me.XrLine2 = New DevExpress.XtraReports.UI.XRLine()
         Me.XrTable2 = New DevExpress.XtraReports.UI.XRTable()
         Me.XrTableRow2 = New DevExpress.XtraReports.UI.XRTableRow()
         Me.XrTableCell16 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.XrTableCell13 = New DevExpress.XtraReports.UI.XRTableCell()
         Me.XrTableCell17 = New DevExpress.XtraReports.UI.XRTableCell()
         Me.XrTableCell18 = New DevExpress.XtraReports.UI.XRTableCell()
         Me.XrTableCell19 = New DevExpress.XtraReports.UI.XRTableCell()
@@ -54,22 +55,17 @@ Partial Public Class rptclaimsubmission
         Me.XrTableCell25 = New DevExpress.XtraReports.UI.XRTableCell()
         Me.XrTableCell11 = New DevExpress.XtraReports.UI.XRTableCell()
         Me.XrLabel1 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.XrLine1 = New DevExpress.XtraReports.UI.XRLine()
         Me.XrPictureBox1 = New DevExpress.XtraReports.UI.XRPictureBox()
-        Me.imgClient = New DevExpress.XtraReports.UI.XRPictureBox()
         Me.StatusDS1 = New OnlineStatus.StatusDS()
         Me.PageFooter = New DevExpress.XtraReports.UI.PageFooterBand()
-        Me.XrLabel3 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.XrLabel2 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.XrLine4 = New DevExpress.XtraReports.UI.XRLine()
-        Me.XrLine3 = New DevExpress.XtraReports.UI.XRLine()
         Me.lblPrinted = New DevExpress.XtraReports.UI.XRLabel()
         Me.XrPageInfo3 = New DevExpress.XtraReports.UI.XRPageInfo()
         Me.XrPageInfo1 = New DevExpress.XtraReports.UI.XRPageInfo()
         Me.OrClaimsList_spTableAdapter1 = New OnlineStatus.StatusDSTableAdapters.ORClaimsList_spTableAdapter()
         Me.XrControlStyle1 = New DevExpress.XtraReports.UI.XRControlStyle()
-        Me.XrTableCell13 = New DevExpress.XtraReports.UI.XRTableCell()
-        Me.XrTableCell14 = New DevExpress.XtraReports.UI.XRTableCell()
+        Me.ReportFooter = New DevExpress.XtraReports.UI.ReportFooterBand()
+        Me.XrLabel2 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.XrLabel3 = New DevExpress.XtraReports.UI.XRLabel()
         CType(Me.XrTable1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.XrTable2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.StatusDS1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -78,7 +74,7 @@ Partial Public Class rptclaimsubmission
         'Detail
         '
         Me.Detail.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.XrTable1})
-        Me.Detail.HeightF = 25.0!
+        Me.Detail.HeightF = 20.0!
         Me.Detail.Name = "Detail"
         Me.Detail.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100.0!)
         Me.Detail.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
@@ -89,7 +85,7 @@ Partial Public Class rptclaimsubmission
         Me.XrTable1.LocationFloat = New DevExpress.Utils.PointFloat(0.0!, 0.0!)
         Me.XrTable1.Name = "XrTable1"
         Me.XrTable1.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() {Me.XrTableRow1})
-        Me.XrTable1.SizeF = New System.Drawing.SizeF(1139.0!, 25.0!)
+        Me.XrTable1.SizeF = New System.Drawing.SizeF(1139.0!, 20.0!)
         Me.XrTable1.StylePriority.UseFont = False
         Me.XrTable1.StylePriority.UseTextAlignment = False
         Me.XrTable1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
@@ -108,6 +104,12 @@ Partial Public Class rptclaimsubmission
         Me.XrTableCell1.Text = "XrTableCell1"
         Me.XrTableCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
         Me.XrTableCell1.Weight = 0.11003307920636865R
+        '
+        'XrTableCell14
+        '
+        Me.XrTableCell14.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "ORClaimsList_sp.StatusText")})
+        Me.XrTableCell14.Name = "XrTableCell14"
+        Me.XrTableCell14.Weight = 0.069227679043060569R
         '
         'XrTableCell2
         '
@@ -212,37 +214,33 @@ Partial Public Class rptclaimsubmission
         '
         'TopMargin
         '
-        Me.TopMargin.HeightF = 11.0!
+        Me.TopMargin.HeightF = 0.0!
         Me.TopMargin.Name = "TopMargin"
         Me.TopMargin.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100.0!)
         Me.TopMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
         '
         'BottomMargin
         '
-        Me.BottomMargin.HeightF = 12.0!
+        Me.BottomMargin.HeightF = 1.0!
         Me.BottomMargin.Name = "BottomMargin"
         Me.BottomMargin.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100.0!)
         Me.BottomMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
         '
         'PageHeader
         '
-        Me.PageHeader.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.XrLine2, Me.XrTable2, Me.XrLabel1, Me.XrLine1, Me.XrPictureBox1, Me.imgClient})
-        Me.PageHeader.HeightF = 133.8332!
+        Me.PageHeader.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.XrTable2, Me.XrLabel1, Me.XrPictureBox1})
+        Me.PageHeader.HeightF = 123.8332!
         Me.PageHeader.Name = "PageHeader"
-        '
-        'XrLine2
-        '
-        Me.XrLine2.LocationFloat = New DevExpress.Utils.PointFloat(0.0!, 88.91665!)
-        Me.XrLine2.Name = "XrLine2"
-        Me.XrLine2.SizeF = New System.Drawing.SizeF(1139.0!, 2.083321!)
         '
         'XrTable2
         '
+        Me.XrTable2.Borders = CType((DevExpress.XtraPrinting.BorderSide.Top Or DevExpress.XtraPrinting.BorderSide.Bottom), DevExpress.XtraPrinting.BorderSide)
         Me.XrTable2.Font = New System.Drawing.Font("Calibri", 11.0!, System.Drawing.FontStyle.Bold)
-        Me.XrTable2.LocationFloat = New DevExpress.Utils.PointFloat(0.0!, 90.99998!)
+        Me.XrTable2.LocationFloat = New DevExpress.Utils.PointFloat(0.0!, 83.83321!)
         Me.XrTable2.Name = "XrTable2"
         Me.XrTable2.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() {Me.XrTableRow2})
-        Me.XrTable2.SizeF = New System.Drawing.SizeF(1139.0!, 40.83324!)
+        Me.XrTable2.SizeF = New System.Drawing.SizeF(1139.0!, 40.0!)
+        Me.XrTable2.StylePriority.UseBorders = False
         Me.XrTable2.StylePriority.UseFont = False
         Me.XrTable2.StylePriority.UseTextAlignment = False
         Me.XrTable2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
@@ -258,6 +256,12 @@ Partial Public Class rptclaimsubmission
         Me.XrTableCell16.Name = "XrTableCell16"
         Me.XrTableCell16.Text = "Claim Submit Date"
         Me.XrTableCell16.Weight = 0.11003307920636855R
+        '
+        'XrTableCell13
+        '
+        Me.XrTableCell13.Name = "XrTableCell13"
+        Me.XrTableCell13.Text = "Review Status"
+        Me.XrTableCell13.Weight = 0.069227689247505539R
         '
         'XrTableCell17
         '
@@ -357,34 +361,22 @@ Partial Public Class rptclaimsubmission
         'XrLabel1
         '
         Me.XrLabel1.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.XrLabel1.LocationFloat = New DevExpress.Utils.PointFloat(386.4583!, 62.54166!)
+        Me.XrLabel1.LocationFloat = New DevExpress.Utils.PointFloat(386.4584!, 47.79155!)
         Me.XrLabel1.Name = "XrLabel1"
         Me.XrLabel1.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel1.SizeF = New System.Drawing.SizeF(280.2084!, 26.37499!)
+        Me.XrLabel1.SizeF = New System.Drawing.SizeF(280.2084!, 20.0!)
         Me.XrLabel1.StylePriority.UseFont = False
         Me.XrLabel1.StylePriority.UseTextAlignment = False
         Me.XrLabel1.Text = "Claim Submission  Report"
         Me.XrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
         '
-        'XrLine1
-        '
-        Me.XrLine1.LocationFloat = New DevExpress.Utils.PointFloat(0.0!, 131.8332!)
-        Me.XrLine1.Name = "XrLine1"
-        Me.XrLine1.SizeF = New System.Drawing.SizeF(1139.0!, 2.0!)
-        '
         'XrPictureBox1
         '
         Me.XrPictureBox1.Image = CType(resources.GetObject("XrPictureBox1.Image"), System.Drawing.Image)
-        Me.XrPictureBox1.LocationFloat = New DevExpress.Utils.PointFloat(0.0!, 24.5!)
+        Me.XrPictureBox1.LocationFloat = New DevExpress.Utils.PointFloat(0.00003178914!, 0.0!)
         Me.XrPictureBox1.Name = "XrPictureBox1"
-        Me.XrPictureBox1.SizeF = New System.Drawing.SizeF(241.6667!, 50.0!)
-        Me.XrPictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.AutoSize
-        '
-        'imgClient
-        '
-        Me.imgClient.LocationFloat = New DevExpress.Utils.PointFloat(929.0!, 11.50001!)
-        Me.imgClient.Name = "imgClient"
-        Me.imgClient.SizeF = New System.Drawing.SizeF(200.0!, 63.0!)
+        Me.XrPictureBox1.SizeF = New System.Drawing.SizeF(241.6667!, 47.91667!)
+        Me.XrPictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.StretchImage
         '
         'StatusDS1
         '
@@ -393,59 +385,16 @@ Partial Public Class rptclaimsubmission
         '
         'PageFooter
         '
-        Me.PageFooter.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.XrLabel3, Me.XrLabel2, Me.XrLine4, Me.XrLine3, Me.lblPrinted, Me.XrPageInfo3, Me.XrPageInfo1})
-        Me.PageFooter.HeightF = 79.25003!
+        Me.PageFooter.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.lblPrinted, Me.XrPageInfo3, Me.XrPageInfo1})
+        Me.PageFooter.HeightF = 25.08336!
         Me.PageFooter.Name = "PageFooter"
         Me.PageFooter.StylePriority.UseTextAlignment = False
         Me.PageFooter.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight
         '
-        'XrLabel3
-        '
-        Me.XrLabel3.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "ORClaimsList_sp.Claim Amount")})
-        Me.XrLabel3.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.XrLabel3.LocationFloat = New DevExpress.Utils.PointFloat(335.2084!, 4.000019!)
-        Me.XrLabel3.Name = "XrLabel3"
-        Me.XrLabel3.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel3.SizeF = New System.Drawing.SizeF(239.7916!, 23.0!)
-        Me.XrLabel3.StylePriority.UseFont = False
-        XrSummary1.FormatString = "Total Claim Amount = {0:$0.00}"
-        XrSummary1.IgnoreNullValues = True
-        XrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Page
-        Me.XrLabel3.Summary = XrSummary1
-        Me.XrLabel3.Text = "XrLabel3"
-        '
-        'XrLabel2
-        '
-        Me.XrLabel2.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "ORClaimsList_sp.Claim_ID")})
-        Me.XrLabel2.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.XrLabel2.LocationFloat = New DevExpress.Utils.PointFloat(10.0!, 4.000019!)
-        Me.XrLabel2.Name = "XrLabel2"
-        Me.XrLabel2.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel2.SizeF = New System.Drawing.SizeF(238.1667!, 23.0!)
-        Me.XrLabel2.StylePriority.UseFont = False
-        XrSummary2.FormatString = "Total Claim = {0:n0}"
-        XrSummary2.Func = DevExpress.XtraReports.UI.SummaryFunc.Count
-        XrSummary2.IgnoreNullValues = True
-        XrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Page
-        Me.XrLabel2.Summary = XrSummary2
-        Me.XrLabel2.Text = "XrLabel2"
-        '
-        'XrLine4
-        '
-        Me.XrLine4.LocationFloat = New DevExpress.Utils.PointFloat(0.0!, 27.00002!)
-        Me.XrLine4.Name = "XrLine4"
-        Me.XrLine4.SizeF = New System.Drawing.SizeF(1139.0!, 2.0!)
-        '
-        'XrLine3
-        '
-        Me.XrLine3.LocationFloat = New DevExpress.Utils.PointFloat(0.0!, 0.0!)
-        Me.XrLine3.Name = "XrLine3"
-        Me.XrLine3.SizeF = New System.Drawing.SizeF(1139.0!, 2.083354!)
-        '
         'lblPrinted
         '
         Me.lblPrinted.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.lblPrinted.LocationFloat = New DevExpress.Utils.PointFloat(1039.0!, 47.66668!)
+        Me.lblPrinted.LocationFloat = New DevExpress.Utils.PointFloat(1039.0!, 0.0!)
         Me.lblPrinted.Name = "lblPrinted"
         Me.lblPrinted.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.lblPrinted.SizeF = New System.Drawing.SizeF(100.0!, 23.0!)
@@ -457,7 +406,7 @@ Partial Public Class rptclaimsubmission
         'XrPageInfo3
         '
         Me.XrPageInfo3.Font = New System.Drawing.Font("Calibri", 10.0!)
-        Me.XrPageInfo3.LocationFloat = New DevExpress.Utils.PointFloat(566.6667!, 47.66668!)
+        Me.XrPageInfo3.LocationFloat = New DevExpress.Utils.PointFloat(566.6668!, 0.0!)
         Me.XrPageInfo3.Name = "XrPageInfo3"
         Me.XrPageInfo3.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.XrPageInfo3.SizeF = New System.Drawing.SizeF(100.0!, 23.0!)
@@ -469,7 +418,7 @@ Partial Public Class rptclaimsubmission
         '
         Me.XrPageInfo1.Font = New System.Drawing.Font("Calibri", 10.0!)
         Me.XrPageInfo1.Format = "{0:dddd, MMMM dd, yyyy h:mm tt}"
-        Me.XrPageInfo1.LocationFloat = New DevExpress.Utils.PointFloat(0.0!, 45.58335!)
+        Me.XrPageInfo1.LocationFloat = New DevExpress.Utils.PointFloat(0.00003178914!, 0.0!)
         Me.XrPageInfo1.Name = "XrPageInfo1"
         Me.XrPageInfo1.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.XrPageInfo1.PageInfo = DevExpress.XtraPrinting.PageInfo.DateTime
@@ -487,32 +436,59 @@ Partial Public Class rptclaimsubmission
         Me.XrControlStyle1.Name = "XrControlStyle1"
         Me.XrControlStyle1.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100.0!)
         '
-        'XrTableCell13
+        'ReportFooter
         '
-        Me.XrTableCell13.Name = "XrTableCell13"
-        Me.XrTableCell13.Text = "Review Status"
-        Me.XrTableCell13.Weight = 0.069227689247505539R
+        Me.ReportFooter.Borders = CType((DevExpress.XtraPrinting.BorderSide.Top Or DevExpress.XtraPrinting.BorderSide.Bottom), DevExpress.XtraPrinting.BorderSide)
+        Me.ReportFooter.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.XrLabel2, Me.XrLabel3})
+        Me.ReportFooter.HeightF = 20.0!
+        Me.ReportFooter.Name = "ReportFooter"
+        Me.ReportFooter.StylePriority.UseBorders = False
         '
-        'XrTableCell14
+        'XrLabel2
         '
-        Me.XrTableCell14.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "ORClaimsList_sp.StatusText")})
-        Me.XrTableCell14.Name = "XrTableCell14"
-        Me.XrTableCell14.Weight = 0.069227679043060569R
+        Me.XrLabel2.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "ORClaimsList_sp.Claim_ID")})
+        Me.XrLabel2.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.XrLabel2.LocationFloat = New DevExpress.Utils.PointFloat(0.00003178914!, 0.0!)
+        Me.XrLabel2.Name = "XrLabel2"
+        Me.XrLabel2.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrLabel2.SizeF = New System.Drawing.SizeF(336.8719!, 20.0!)
+        Me.XrLabel2.StylePriority.UseFont = False
+        XrSummary1.FormatString = "Total Claim = {0:n0}"
+        XrSummary1.Func = DevExpress.XtraReports.UI.SummaryFunc.Count
+        XrSummary1.IgnoreNullValues = True
+        XrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Page
+        Me.XrLabel2.Summary = XrSummary1
+        Me.XrLabel2.Text = "XrLabel2"
+        '
+        'XrLabel3
+        '
+        Me.XrLabel3.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "ORClaimsList_sp.Claim Amount")})
+        Me.XrLabel3.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.XrLabel3.LocationFloat = New DevExpress.Utils.PointFloat(336.872!, 0.0!)
+        Me.XrLabel3.Name = "XrLabel3"
+        Me.XrLabel3.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrLabel3.SizeF = New System.Drawing.SizeF(802.128!, 20.0!)
+        Me.XrLabel3.StylePriority.UseFont = False
+        XrSummary2.FormatString = "Total Claim Amount = {0:$0.00}"
+        XrSummary2.IgnoreNullValues = True
+        XrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Page
+        Me.XrLabel3.Summary = XrSummary2
+        Me.XrLabel3.Text = "XrLabel3"
         '
         'rptclaimsubmission
         '
-        Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() {Me.Detail, Me.TopMargin, Me.BottomMargin, Me.PageHeader, Me.PageFooter})
+        Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() {Me.Detail, Me.TopMargin, Me.BottomMargin, Me.PageHeader, Me.PageFooter, Me.ReportFooter})
         Me.DataAdapter = Me.OrClaimsList_spTableAdapter1
         Me.DataMember = "ORClaimsList_sp"
         Me.DataSource = Me.StatusDS1
         Me.Landscape = True
-        Me.Margins = New System.Drawing.Printing.Margins(16, 14, 11, 12)
+        Me.Margins = New System.Drawing.Printing.Margins(16, 14, 0, 1)
         Me.PageHeight = 827
         Me.PageWidth = 1169
         Me.PaperKind = System.Drawing.Printing.PaperKind.A4
         Me.ScriptLanguage = DevExpress.XtraReports.ScriptLanguage.VisualBasic
         Me.StyleSheet.AddRange(New DevExpress.XtraReports.UI.XRControlStyle() {Me.XrControlStyle1})
-        Me.Version = "13.2"
+        Me.Version = "15.1"
         CType(Me.XrTable1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.XrTable2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.StatusDS1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -524,8 +500,6 @@ Partial Public Class rptclaimsubmission
     Friend WithEvents BottomMargin As DevExpress.XtraReports.UI.BottomMarginBand
     Friend WithEvents PageHeader As DevExpress.XtraReports.UI.PageHeaderBand
     Friend WithEvents XrPictureBox1 As DevExpress.XtraReports.UI.XRPictureBox
-    Friend WithEvents imgClient As DevExpress.XtraReports.UI.XRPictureBox
-    Friend WithEvents XrLine1 As DevExpress.XtraReports.UI.XRLine
     Friend WithEvents XrLabel1 As DevExpress.XtraReports.UI.XRLabel
     Friend WithEvents XrTable1 As DevExpress.XtraReports.UI.XRTable
     Friend WithEvents XrTableRow1 As DevExpress.XtraReports.UI.XRTableRow
@@ -552,19 +526,17 @@ Partial Public Class rptclaimsubmission
     Friend WithEvents XrTableCell24 As DevExpress.XtraReports.UI.XRTableCell
     Friend WithEvents XrTableCell25 As DevExpress.XtraReports.UI.XRTableCell
     Friend WithEvents StatusDS1 As OnlineStatus.StatusDS
-    Friend WithEvents XrLine2 As DevExpress.XtraReports.UI.XRLine
     Friend WithEvents PageFooter As DevExpress.XtraReports.UI.PageFooterBand
     Friend WithEvents XrPageInfo3 As DevExpress.XtraReports.UI.XRPageInfo
     Friend WithEvents XrPageInfo1 As DevExpress.XtraReports.UI.XRPageInfo
     Friend WithEvents OrClaimsList_spTableAdapter1 As OnlineStatus.StatusDSTableAdapters.ORClaimsList_spTableAdapter
     Friend WithEvents XrControlStyle1 As DevExpress.XtraReports.UI.XRControlStyle
     Friend WithEvents lblPrinted As DevExpress.XtraReports.UI.XRLabel
-    Friend WithEvents XrLine3 As DevExpress.XtraReports.UI.XRLine
-    Friend WithEvents XrLine4 As DevExpress.XtraReports.UI.XRLine
-    Friend WithEvents XrLabel2 As DevExpress.XtraReports.UI.XRLabel
-    Friend WithEvents XrLabel3 As DevExpress.XtraReports.UI.XRLabel
     Friend WithEvents XrTableCell12 As DevExpress.XtraReports.UI.XRTableCell
     Friend WithEvents XrTableCell11 As DevExpress.XtraReports.UI.XRTableCell
     Friend WithEvents XrTableCell14 As DevExpress.XtraReports.UI.XRTableCell
     Friend WithEvents XrTableCell13 As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents ReportFooter As DevExpress.XtraReports.UI.ReportFooterBand
+    Friend WithEvents XrLabel2 As DevExpress.XtraReports.UI.XRLabel
+    Friend WithEvents XrLabel3 As DevExpress.XtraReports.UI.XRLabel
 End Class

@@ -1,0 +1,973 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+OnlineStatus
+</name>
+</assembly>
+<members>
+<member name="F:OnlineStatus.Site.HeadContent1">
+	<summary>
+HeadContent1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.Site.imgUserLogo">
+	<summary>
+imgUserLogo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.Site.auditdb">
+	<summary>
+auditdb control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.Site.lstDb">
+	<summary>
+lstDb control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.Site.stMenu">
+	<summary>
+stMenu control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.Site.HeadLoginView">
+	<summary>
+HeadLoginView control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.Site.MainContent1">
+	<summary>
+MainContent1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.Site.SubContent">
+	<summary>
+SubContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.Statements.btnXls">
+	<summary>
+btnXls control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.Statements.ASPxPageControl1">
+	<summary>
+ASPxPageControl1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.Statements.grdResponded">
+	<summary>
+grdResponded control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.Statements.grdNotResponded">
+	<summary>
+grdNotResponded control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.Statements.SqlDS">
+	<summary>
+SqlDS control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.ChangePassword.ChangeUserPassword">
+	<summary>
+ChangeUserPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.Site.HeadContent">
+	<summary>
+HeadContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.Site.MainContent">
+	<summary>
+MainContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.rootcauseanalysis.grdRootCause">
+	<summary>
+grdRootCause control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.rootcauseanalysis.crtRootCause">
+	<summary>
+crtRootCause control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.auditprogress.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.auditprogress.Label2">
+	<summary>
+Label2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.auditprogress.Label3">
+	<summary>
+Label3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.auditprogress.crtVendorCount">
+	<summary>
+crtVendorCount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.auditprogress.crtTotalSpend">
+	<summary>
+crtTotalSpend control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.auditprogress.crtTotalTransaction">
+	<summary>
+crtTotalTransaction control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.auditprogress.lblScope1">
+	<summary>
+lblScope1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.auditprogress.lblReceived1">
+	<summary>
+lblReceived1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.auditprogress.lblCompliance1">
+	<summary>
+lblCompliance1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.auditprogress.lblScope2">
+	<summary>
+lblScope2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.auditprogress.lblReceived2">
+	<summary>
+lblReceived2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.auditprogress.lblCompliance2">
+	<summary>
+lblCompliance2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.auditprogress.lblScope3">
+	<summary>
+lblScope3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.auditprogress.lblReceived3">
+	<summary>
+lblReceived3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.auditprogress.lblCompliance3">
+	<summary>
+lblCompliance3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus._Default.btnPdf">
+	<summary>
+btnPdf control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus._Default.nbMain">
+	<summary>
+nbMain control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus._Default.popClaims">
+	<summary>
+popClaims control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.documentlibrary.grdDocumentLib">
+	<summary>
+grdDocumentLib control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.documentlibrary.SqlDocumentLib">
+	<summary>
+SqlDocumentLib control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.usertheme.rblThemes">
+	<summary>
+rblThemes control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.usertheme.DsTheme">
+	<summary>
+DsTheme control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.usertheme.lblStatus">
+	<summary>
+lblStatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.Login.LoginUser">
+	<summary>
+LoginUser control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.showreport.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.showreport.ReportToolbar1">
+	<summary>
+ReportToolbar1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.showreport.ReportViewer1">
+	<summary>
+ReportViewer1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.showfile.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.claimsummary.grdClaimSummary">
+	<summary>
+grdClaimSummary control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.currentitemsunder.grdCurrentItems">
+	<summary>
+grdCurrentItems control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.ActionItem.grdActionItems">
+	<summary>
+grdActionItems control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.ActionItem.sqlActionItem">
+	<summary>
+sqlActionItem control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.rootcauseanalysisbyprocess.grdRootCause">
+	<summary>
+grdRootCause control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.rootcauseanalysisbyprocess.crtRootCause">
+	<summary>
+crtRootCause control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.claimsubmission.btnPdf">
+	<summary>
+btnPdf control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.claimsubmission.btnXls">
+	<summary>
+btnXls control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.claimsubmission.ASPxPageControl1">
+	<summary>
+ASPxPageControl1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.claimsubmission.grdClaimSubmissionPending">
+	<summary>
+grdClaimSubmissionPending control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.claimsubmission.grdClaimSubmission">
+	<summary>
+grdClaimSubmission control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.claimsubmission.grdClaimSubmissionAccepted">
+	<summary>
+grdClaimSubmissionAccepted control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.claimsubmission.grdClaimSubmissionAll">
+	<summary>
+grdClaimSubmissionAll control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.claimsubmission.Label12">
+	<summary>
+Label12 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.claimsubmission.SqlDS">
+	<summary>
+SqlDS control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.claimsubmission.hdnDatabase">
+	<summary>
+hdnDatabase control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.claimsubmission.exportGrd">
+	<summary>
+exportGrd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.claimsubmission.popEmail">
+	<summary>
+popEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.claimsubmission.PopupControlContentControl1">
+	<summary>
+PopupControlContentControl1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.claimsubmission.txtTo">
+	<summary>
+txtTo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.claimsubmission.txtSubject">
+	<summary>
+txtSubject control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.claimsubmission.txtBody">
+	<summary>
+txtBody control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.claimsubmission.lblAttachment">
+	<summary>
+lblAttachment control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.claimsubmission.btnSend">
+	<summary>
+btnSend control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.claimsubmission.hdnFile">
+	<summary>
+hdnFile control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.businessunitanalysis.grdBusinessUnit">
+	<summary>
+grdBusinessUnit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.businessunitanalysis.crtBusinessUnit">
+	<summary>
+crtBusinessUnit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.export.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:OnlineStatus.StatusDS.ORItemsUnderReview_SPDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OnlineStatus.StatusDS.OREntity_spDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OnlineStatus.StatusDS.ORRootcause_spDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OnlineStatus.StatusDS.ORAuditProgress_spDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OnlineStatus.StatusDS.ORClaimsList_spDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OnlineStatus.StatusDS.ORClaimSummary_spDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OnlineStatus.StatusDS.ORsatetmentSummary_spDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OnlineStatus.StatusDS.ORprocess_spDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OnlineStatus.StatusDS.ORItemsUnderReview_SPRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OnlineStatus.StatusDS.OREntity_spRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OnlineStatus.StatusDS.ORRootcause_spRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OnlineStatus.StatusDS.ORAuditProgress_spRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OnlineStatus.StatusDS.ORClaimsList_spRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OnlineStatus.StatusDS.ORClaimSummary_spRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OnlineStatus.StatusDS.ORsatetmentSummary_spRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OnlineStatus.StatusDS.ORprocess_spRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OnlineStatus.StatusDS.ORItemsUnderReview_SPRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OnlineStatus.StatusDS.OREntity_spRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OnlineStatus.StatusDS.ORRootcause_spRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OnlineStatus.StatusDS.ORAuditProgress_spRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OnlineStatus.StatusDS.ORClaimsList_spRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OnlineStatus.StatusDS.ORClaimSummary_spRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OnlineStatus.StatusDS.ORsatetmentSummary_spRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OnlineStatus.StatusDS.ORprocess_spRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OnlineStatus.StatusDS">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:OnlineStatus.StatusDSTableAdapters.ORItemsUnderReview_SPTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OnlineStatus.StatusDSTableAdapters.OREntity_spTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OnlineStatus.StatusDSTableAdapters.ORRootcause_spTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OnlineStatus.StatusDSTableAdapters.ORAuditProgress_spTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OnlineStatus.StatusDSTableAdapters.ORClaimsList_spTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OnlineStatus.StatusDSTableAdapters.ORClaimSummary_spTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OnlineStatus.StatusDSTableAdapters.ORsatetmentSummary_spTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OnlineStatus.StatusDSTableAdapters.ORprocess_spTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:OnlineStatus.StatusDSTableAdapters.TableAdapterManager.UpdateUpdatedRows(OnlineStatus.StatusDS,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:OnlineStatus.StatusDSTableAdapters.TableAdapterManager.UpdateInsertedRows(OnlineStatus.StatusDS,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:OnlineStatus.StatusDSTableAdapters.TableAdapterManager.UpdateDeletedRows(OnlineStatus.StatusDS,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:OnlineStatus.StatusDSTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:OnlineStatus.StatusDSTableAdapters.TableAdapterManager.UpdateAll(OnlineStatus.StatusDS)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:OnlineStatus.StatusDSTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:OnlineStatus.StatusDSTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:OnlineStatus.StatusDSTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="F:OnlineStatus.ClaimSummary1.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.ClaimSummary1.grdClaimSummary">
+	<summary>
+grdClaimSummary control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.ClaimSummary1.popClaims">
+	<summary>
+popClaims control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.ClaimSummary1.PopupControlContentControl1">
+	<summary>
+PopupControlContentControl1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.paymentreview.auditprogress1">
+	<summary>
+auditprogress1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.paymentreview.businessunitanalysis1">
+	<summary>
+businessunitanalysis1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.paymentreview.currentitemsunder1">
+	<summary>
+currentitemsunder1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.projectresults.GrossTotal">
+	<summary>
+GrossTotal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.projectresults.ClaimCount">
+	<summary>
+ClaimCount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.projectresults.NetTotal">
+	<summary>
+NetTotal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.projectresults.crtRecoveryStatus">
+	<summary>
+crtRecoveryStatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.projectresults.crtProjectResults">
+	<summary>
+crtProjectResults control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.ClaimDetails.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.ClaimDetails.grdClaim">
+	<summary>
+grdClaim control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.ClaimDetails.SqlDS">
+	<summary>
+SqlDS control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:OnlineStatus.My.MyWebExtension.Application">
+	<summary>
+ Returns information about the current application.
+ </summary>
+</member><member name="P:OnlineStatus.My.MyWebExtension.Computer">
+	<summary>
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:OnlineStatus.My.MyWebExtension.User">
+	<summary>
+ Returns information for the current Web user.
+ </summary>
+</member><member name="P:OnlineStatus.My.MyWebExtension.Request">
+	<summary>
+ Returns Request object.
+ </summary>
+</member><member name="P:OnlineStatus.My.MyWebExtension.Response">
+	<summary>
+ Returns Response object.
+ </summary>
+</member><member name="P:OnlineStatus.My.MyWebExtension.Log">
+	<summary>
+ Returns the Asp log object.
+ </summary>
+</member><member name="P:OnlineStatus.My.MyWebExtension.WebServices">
+	<summary>
+ Provides access to WebServices added to this project.
+ </summary>
+</member><member name="T:OnlineStatus.My.MyWebExtension">
+	<summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:OnlineStatus.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:OnlineStatus.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:OnlineStatus.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="F:OnlineStatus.Register.RegisterUser">
+	<summary>
+RegisterUser control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.Register.RegisterUserWizardStep">
+	<summary>
+RegisterUserWizardStep control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.invoicesubmission.grdInvoiceSubmission">
+	<summary>
+grdInvoiceSubmission control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.invoicesubmission.SqlInvoice">
+	<summary>
+SqlInvoice control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnlineStatus.invoicesubmission.hdnDatabase">
+	<summary>
+hdnDatabase control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>

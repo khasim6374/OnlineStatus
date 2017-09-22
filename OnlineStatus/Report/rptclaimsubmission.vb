@@ -13,8 +13,8 @@ Public Class rptclaimsubmission
         Dim dtSet As New DataSet
         dtSet = sqlDb.GetDataSet("GetUserLogo_sp", New SqlParameter("@UserName", HttpContext.Current.User.Identity.Name))
         If (dtSet.Tables(0).Rows.Count > 0) Then
-            imgClient.ImageUrl = dtSet.Tables(0).Rows(0)(0)
-            imgClient.Sizing = DevExpress.XtraPrinting.ImageSizeMode.StretchImage
+            'imgClient.ImageUrl = dtSet.Tables(0).Rows(0)(0)
+            'imgClient.Sizing = DevExpress.XtraPrinting.ImageSizeMode.StretchImage
             'imgClient.LocationF = New System.Drawing.PointF(800 - imgClient.WidthF, 6.5F)
         End If
         MyBase.Landscape = True
