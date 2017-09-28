@@ -45,7 +45,7 @@ s /* this rule styles <h1> and <h2> tags that are the  first child of the left a
     background-color: #fff;
     margin: 0px auto 0px auto;
     border: 1px solid #496077;
-    /*background-color: #0c2404;*/
+    background-color: #0c2404;
     position: relative;
 }
 

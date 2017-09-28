@@ -1,6 +1,6 @@
-﻿Public Class Site
+﻿Public Class Site1
     Inherits System.Web.UI.MasterPage
 
-   
+
 
 End Class

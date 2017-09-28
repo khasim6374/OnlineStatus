@@ -35,7 +35,7 @@ Public Class Site
         Dim dtSet As New DataSet
         dtSet = sqlDb.GetDataSet("GetUserLogo_sp", New SqlParameter("@UserName", Context.User.Identity.Name))
         If Not dtSet Is Nothing Then
-            If (dtSet.Tables(0).Rows.Count > 0) Then
+            If (dtSet.Tables(0).Rows.Count > 0) And (Not imgUserLogo Is Nothing) Then
                 imgUserLogo.ImageUrl = dtSet.Tables(0).Rows(0)(0)
             End If
         End If
