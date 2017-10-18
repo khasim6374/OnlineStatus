@@ -279,7 +279,7 @@ h3 {
 }
 
 .topBorder {
-    border-top: black 1px solid;
+    border-top: #9F9F9F 1px solid;
 }
 
 .grdBorder {
@@ -291,11 +291,11 @@ h3 {
     background-image: url(../../images/bg2.png);
     background-repeat: repeat-x;
     height: 30px;
-    border-bottom: black 1px solid;
+    border-bottom: #9F9F9F 1px solid;
 }
 
 .rgtBordr {
-    border-right: black 1px solid;
+    border-right: #9F9F9F 1px solid;
 }
 
 .grdHeader {
@@ -360,7 +360,7 @@ h3 {
 
 .SubTotal {
     font-weight: bold;
-    border-bottom: black 1px solid;
+    border-bottom: #9F9F9F 1px solid;
     background-color: #eeeeed;
 }
 
@@ -432,8 +432,8 @@ h3 {
 }
 
 .toprightBorder {
-    border-top: black 1px solid;
-    border-right: black 1px solid;
+    border-top: #9F9F9F 1px solid;
+    border-right: #9F9F9F 1px solid;
 }
 
 .menuLeft {

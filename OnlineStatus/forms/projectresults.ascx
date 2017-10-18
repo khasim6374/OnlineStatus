@@ -1,5 +1,5 @@
 ﻿<%@ Control Language="vb" AutoEventWireup="false" CodeBehind="projectresults.ascx.vb" Inherits="OnlineStatus.projectresults" %>
-<script>
+<script type="text/javascript">
     function ShowClaimSummaryPopup2() {
         var height = Math.max(0, document.documentElement.clientHeight);
         popClaims.SetHeight(height - 15);
@@ -8,6 +8,9 @@
         popClaims.SetHeaderText('Claim Summary');
         popClaims.SetContentUrl('ClaimSummary.aspx?height='+height);
         popClaims.Show();
+    }
+    function closepopup() {
+        popClaims.Hide();
     }
 </script>
 <table width="100%" cellpadding="0" cellspacing="0" border="0">

@@ -26,11 +26,8 @@
         <div class="clear">
         </div>
     </div>
-    <div class="footer" 
-
-
-    </div>
-    <table align = "center"><tr><td>
+    <div class="footer" >
+    <table align="center" style="display: inline-block;"><tr><td>
          <!-- McAfee Secure Trustmark for www.revenew.net -->
     <a target="_blank" href="https://www2.mcafeesecure.com/verify?host=www.revenew.net"><img class="mfes-trustmark" border="0" 
     
@@ -45,11 +42,10 @@
     
     <!-- End McAfee Secure Trustmark -->
     </td>
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;
-    </td>
     <td>
-    <div id="DigiCertClickID_cK7F3OOZ" data-language="en_US">
-              <a href="http://www.digicert.com/ssl.htm">SSL</a>
+    <div id="DigiCertClickID_FGSJ1lz1" data-language="en_US">
+              <%--<a href="http://www.digicert.com/ssl.htm">SSL</a>--%>
+              <img src="//seal.digicert.com/seals/cascade/?s=FGSJ1lz1,3,m,www.revenew.net" alt="DigiCert Seal" tabindex="0" style="text-decoration: none; text-align: center; display: block; vertical-align: baseline; font-size: 100%; font-style: normal; text-indent: 0px; line-height: 1; width: auto; margin: 0px auto; padding: 0px; border: 0px; background: transparent; position: relative; top: 0px; right: 0px; bottom: 0px; left: 0px; clear: both; float: none; cursor: pointer;" />
     </div>
     <script type="text/javascript">
     var __dcid = __dcid || [];__dcid.push(["DigiCertClickID_cK7F3OOZ", "5", "m", "black", "cK7F3OOZ"]);(function(){var cid=document.createElement("script");cid.async=true;cid.src="//seal.digicert.com/seals/cascade/seal.min.js";var s = document.getElementsByTagName("script");var ls = s[(s.length - 1)];ls.parentNode.insertBefore(cid, ls.nextSibling);}());
@@ -57,9 +53,7 @@
 
     </td>
     </tr></table>
-    
-    
-</script>
+    </div>
     </form>
 </body>
 </html>

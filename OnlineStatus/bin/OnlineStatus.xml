@@ -778,22 +778,6 @@ grdClaimSummary control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OnlineStatus.ClaimSummary1.popClaims">
-	<summary>
-popClaims control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OnlineStatus.ClaimSummary1.PopupControlContentControl1">
-	<summary>
-PopupControlContentControl1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:OnlineStatus.paymentreview.auditprogress1">
 	<summary>
 auditprogress1 control.

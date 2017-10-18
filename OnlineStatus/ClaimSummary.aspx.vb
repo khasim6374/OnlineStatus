@@ -26,7 +26,6 @@ Public Class ClaimSummary1
             grdClaimSummary.DataSourceID = Nothing
             grdClaimSummary.DataSource = dtSet
             grdClaimSummary.DataBind()
-
             Dim sqlDb1 As New SqlDb
             Dim dtSet1 As New DataSet
             Dim ClaimSummaryCount = grdClaimSummary.Rows.Count
@@ -88,6 +87,10 @@ Public Class ClaimSummary1
         If e.Row.Cells.Count = 8 Then
             e.Row.Cells(grdCols.Gross).CssClass = "rgtBordr"
             e.Row.Cells(grdCols.Outstanding).CssClass = "rgtBordr"
+            e.Row.Cells(grdCols.RevenewFees).CssClass = "rgtBordr"
+            e.Row.Cells(grdCols.SubmissionDate).CssClass = "rgtBordr"
+            e.Row.Cells(grdCols.ClaimCount).CssClass = "rgtBordr"
+            e.Row.Cells(grdCols.Realized).CssClass = "rgtBordr"
         End If
 
         If e.Row.RowType = DataControlRowType.DataRow Then
@@ -100,7 +103,10 @@ Public Class ClaimSummary1
                 End Try
 
                 e.Row.Cells(grdCols.SubmissionDate).HorizontalAlign = HorizontalAlign.Center
-
+                e.Row.Cells(grdCols.SubmissionDate).CssClass = "rgtBordr"
+                e.Row.Cells(grdCols.ClaimCount).CssClass = "rgtBordr"
+                e.Row.Cells(grdCols.Realized).CssClass = "rgtBordr"
+                e.Row.Cells(grdCols.RevenewFees).CssClass = "rgtBordr"
                 TotClaimCount += Convert.ToDouble(e.Row.Cells(grdCols.ClaimCount).Text)
                 e.Row.Cells(grdCols.ClaimCount).HorizontalAlign = HorizontalAlign.Center
                 Dim lnkClaim = New HyperLink()
@@ -111,15 +117,15 @@ Public Class ClaimSummary1
 
                 TotGross += Convert.ToDouble(e.Row.Cells(grdCols.Gross).Text)
                 e.Row.Cells(grdCols.Gross).Text = Convert.ToDouble(e.Row.Cells(grdCols.Gross).Text).ToString("C0")
-                e.Row.Cells(grdCols.Gross).HorizontalAlign = HorizontalAlign.Right
+                e.Row.Cells(grdCols.Gross).HorizontalAlign = HorizontalAlign.Center
 
                 TotRealized += Convert.ToDouble(e.Row.Cells(grdCols.Realized).Text)
                 e.Row.Cells(grdCols.Realized).Text = Convert.ToDouble(e.Row.Cells(grdCols.Realized).Text).ToString("C0")
-                e.Row.Cells(grdCols.Realized).HorizontalAlign = HorizontalAlign.Right
+                e.Row.Cells(grdCols.Realized).HorizontalAlign = HorizontalAlign.Center
 
                 TotOutstanding += Convert.ToDouble(e.Row.Cells(grdCols.Outstanding).Text)
                 e.Row.Cells(grdCols.Outstanding).Text = Convert.ToDouble(e.Row.Cells(grdCols.Outstanding).Text).ToString("C0")
-                e.Row.Cells(grdCols.Outstanding).HorizontalAlign = HorizontalAlign.Right
+                e.Row.Cells(grdCols.Outstanding).HorizontalAlign = HorizontalAlign.Center
 
                 'TotGainShare += Convert.ToDouble(e.Row.Cells(grdCols.Gain).Text)
                 'e.Row.Cells(grdCols.Gain).Text = Convert.ToDouble(e.Row.Cells(grdCols.Gain).Text).ToString("C0")
@@ -127,39 +133,40 @@ Public Class ClaimSummary1
 
                 TotPerfomance += Convert.ToDouble(e.Row.Cells(grdCols.RevenewFees).Text)
                 e.Row.Cells(grdCols.RevenewFees).Text = Convert.ToDouble(e.Row.Cells(grdCols.RevenewFees).Text).ToString("C0")
-                e.Row.Cells(grdCols.RevenewFees).HorizontalAlign = HorizontalAlign.Right
+                e.Row.Cells(grdCols.RevenewFees).HorizontalAlign = HorizontalAlign.Center
 
                 TotNet += Convert.ToDouble(e.Row.Cells(grdCols.Net).Text)
                 e.Row.Cells(grdCols.Net).Text = Convert.ToDouble(e.Row.Cells(grdCols.Net).Text).ToString("C0")
-                e.Row.Cells(grdCols.Net).HorizontalAlign = HorizontalAlign.Right
+                e.Row.Cells(grdCols.Net).HorizontalAlign = HorizontalAlign.Center
 
             End If
         End If
         If e.Row.RowType = DataControlRowType.Footer Then
             If e.Row.Cells.Count = 8 Then
                 e.Row.Cells(grdCols.SubmissionDate).Text = "Totals"
-                e.Row.Cells(grdCols.SubmissionDate).CssClass = "topBorder"
+                e.Row.Cells(grdCols.SubmissionDate).CssClass = "toprightBorder"
+                e.Row.Cells(grdCols.SubmissionDate).HorizontalAlign = HorizontalAlign.Center
                 e.Row.Cells(grdCols.ClaimCount).HorizontalAlign = HorizontalAlign.Center
                 e.Row.Cells(grdCols.ClaimCount).Text = TotClaimCount
-                e.Row.Cells(grdCols.ClaimCount).CssClass = "topBorder"
+                e.Row.Cells(grdCols.ClaimCount).CssClass = "toprightBorder"
                 e.Row.Cells(grdCols.Gross).Text = TotGross.ToString("C0")
                 e.Row.Cells(grdCols.Gross).CssClass = "toprightBorder"
-                e.Row.Cells(grdCols.Gross).HorizontalAlign = HorizontalAlign.Right
+                e.Row.Cells(grdCols.Gross).HorizontalAlign = HorizontalAlign.Center
                 e.Row.Cells(grdCols.Realized).Text = TotRealized.ToString("C0")
-                e.Row.Cells(grdCols.Realized).CssClass = "topBorder"
-                e.Row.Cells(grdCols.Realized).HorizontalAlign = HorizontalAlign.Right
+                e.Row.Cells(grdCols.Realized).CssClass = "toprightBorder"
+                e.Row.Cells(grdCols.Realized).HorizontalAlign = HorizontalAlign.Center
                 e.Row.Cells(grdCols.Outstanding).Text = TotOutstanding.ToString("C0")
                 e.Row.Cells(grdCols.Outstanding).CssClass = "toprightBorder"
-                e.Row.Cells(grdCols.Outstanding).HorizontalAlign = HorizontalAlign.Right
+                e.Row.Cells(grdCols.Outstanding).HorizontalAlign = HorizontalAlign.Center
                 'e.Row.Cells(grdCols.Gain).Text = TotGainShare.ToString("C0")
                 'e.Row.Cells(grdCols.Gain).CssClass = "topBorder"
                 'e.Row.Cells(grdCols.Gain).HorizontalAlign = HorizontalAlign.Right
                 e.Row.Cells(grdCols.RevenewFees).Text = TotPerfomance.ToString("C0")
-                e.Row.Cells(grdCols.RevenewFees).CssClass = "topBorder"
-                e.Row.Cells(grdCols.RevenewFees).HorizontalAlign = HorizontalAlign.Right
+                e.Row.Cells(grdCols.RevenewFees).CssClass = "toprightBorder"
+                e.Row.Cells(grdCols.RevenewFees).HorizontalAlign = HorizontalAlign.Center
                 e.Row.Cells(grdCols.Net).Text = TotNet.ToString("C0")
                 e.Row.Cells(grdCols.Net).CssClass = "topBorder"
-                e.Row.Cells(grdCols.Net).HorizontalAlign = HorizontalAlign.Right
+                e.Row.Cells(grdCols.Net).HorizontalAlign = HorizontalAlign.Center
                 e.Row.Font.Bold = True
                 e.Row.CssClass = "topBorder"
             End If

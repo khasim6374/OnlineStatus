@@ -30,22 +30,4 @@ Partial Public Class ClaimSummary1
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents grdClaimSummary As Global.System.Web.UI.WebControls.GridView
-
-    '''<summary>
-    '''popClaims control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents popClaims As Global.DevExpress.Web.ASPxPopupControl
-
-    '''<summary>
-    '''PopupControlContentControl1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents PopupControlContentControl1 As Global.DevExpress.Web.PopupControlContentControl
 End Class

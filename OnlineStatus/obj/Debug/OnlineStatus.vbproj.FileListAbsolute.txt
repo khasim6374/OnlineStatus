@@ -214,4 +214,3 @@ E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\obj\Debug\OnlineStatus.dll.licen
 E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\obj\Debug\OnlineStatus.dll
 E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\obj\Debug\OnlineStatus.xml
 E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\obj\Debug\OnlineStatus.pdb
-E:\Gopan\OnlineStatus\OnlineStatus\OnlineStatus\obj\Debug\OnlineStatus.vbprojResolveAssemblyReference.cache

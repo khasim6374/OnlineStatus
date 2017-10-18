@@ -163,6 +163,24 @@
                         <asp:Label ID="Label16" runat="server" Text='<%# Eval("[Claim Amount]", "{0:C2}") %>'></asp:Label>
                     </EditItemTemplate>
                 </dx:GridViewDataTextColumn>
+
+                <dx:GridViewDataTextColumn FieldName="Currency" VisibleIndex="11"
+                    ReadOnly="True" ExportWidth="100" ToolTip="Currency">
+                    <PropertiesTextEdit DisplayFormatInEditMode="True" DisplayFormatString="c2">
+                    </PropertiesTextEdit>
+                    <EditItemTemplate>
+                        <asp:Label ID="Label17" runat="server" Text='<%# Eval("[Currency]") %>'></asp:Label>
+                    </EditItemTemplate>
+                </dx:GridViewDataTextColumn>
+                <dx:GridViewDataTextColumn FieldName="ClaimAmountUSD" VisibleIndex="11"
+                    ReadOnly="True" ExportWidth="100" ToolTip="ClaimAmountUSD">
+                    <PropertiesTextEdit DisplayFormatInEditMode="True" DisplayFormatString="c2">
+                    </PropertiesTextEdit>
+                    <EditItemTemplate>
+                        <asp:Label ID="Label18" runat="server" Text='<%# Eval("[ClaimAmountUSD]") %>'></asp:Label>
+                    </EditItemTemplate>
+                </dx:GridViewDataTextColumn>
+
                 <dx:GridViewDataTextColumn FieldName="Recovery Type" VisibleIndex="11"
                     ReadOnly="True" ExportWidth="80" ToolTip="Recovery Type">
                     <PropertiesTextEdit DisplayFormatInEditMode="True" DisplayFormatString="c2">
@@ -400,6 +418,24 @@
                         <asp:Label ID="Label16" runat="server" Text='<%# Eval("[Claim Amount]", "{0:C2}") %>'></asp:Label>
                     </EditItemTemplate>
                 </dx:GridViewDataTextColumn>
+
+                <dx:GridViewDataTextColumn FieldName="Currency" VisibleIndex="11"
+                    ReadOnly="True" ExportWidth="100" ToolTip="Currency">
+                    <PropertiesTextEdit DisplayFormatInEditMode="True" DisplayFormatString="c2">
+                    </PropertiesTextEdit>
+                    <EditItemTemplate>
+                        <asp:Label ID="Label17" runat="server" Text='<%# Eval("[Currency]") %>'></asp:Label>
+                    </EditItemTemplate>
+                </dx:GridViewDataTextColumn>
+                <dx:GridViewDataTextColumn FieldName="ClaimAmountUSD" VisibleIndex="11"
+                    ReadOnly="True" ExportWidth="100" ToolTip="ClaimAmountUSD">
+                    <PropertiesTextEdit DisplayFormatInEditMode="True" DisplayFormatString="c2">
+                    </PropertiesTextEdit>
+                    <EditItemTemplate>
+                        <asp:Label ID="Label18" runat="server" Text='<%# Eval("[ClaimAmountUSD]") %>'></asp:Label>
+                    </EditItemTemplate>
+                </dx:GridViewDataTextColumn>
+
                 <dx:GridViewDataTextColumn FieldName="Recovery Type" VisibleIndex="11"
                     ReadOnly="True" ExportWidth="80" ToolTip="Recovery Type">
                     <PropertiesTextEdit DisplayFormatInEditMode="True" DisplayFormatString="c2">
@@ -632,6 +668,24 @@
                         <asp:Label ID="Label16" runat="server" Text='<%# Eval("[Claim Amount]", "{0:C2}") %>'></asp:Label>
                     </EditItemTemplate>
                 </dx:GridViewDataTextColumn>
+
+                <dx:GridViewDataTextColumn FieldName="Currency" VisibleIndex="11"
+                    ReadOnly="True" ExportWidth="100" ToolTip="Currency">
+                    <PropertiesTextEdit DisplayFormatInEditMode="True" DisplayFormatString="c2">
+                    </PropertiesTextEdit>
+                    <EditItemTemplate>
+                        <asp:Label ID="Label17" runat="server" Text='<%# Eval("[Currency]") %>'></asp:Label>
+                    </EditItemTemplate>
+                </dx:GridViewDataTextColumn>
+                <dx:GridViewDataTextColumn FieldName="ClaimAmountUSD" VisibleIndex="11"
+                    ReadOnly="True" ExportWidth="100" ToolTip="ClaimAmountUSD">
+                    <PropertiesTextEdit DisplayFormatInEditMode="True" DisplayFormatString="c2">
+                    </PropertiesTextEdit>
+                    <EditItemTemplate>
+                        <asp:Label ID="Label18" runat="server" Text='<%# Eval("[ClaimAmountUSD]") %>'></asp:Label>
+                    </EditItemTemplate>
+                </dx:GridViewDataTextColumn>
+
                 <dx:GridViewDataTextColumn FieldName="Recovery Type" VisibleIndex="11"
                     ReadOnly="True" ExportWidth="80" ToolTip="Recovery Type">
                     <PropertiesTextEdit DisplayFormatInEditMode="True" DisplayFormatString="c2">
@@ -862,6 +916,24 @@
                                             <asp:Label ID="Label194" runat="server" Text='<%# Eval("[Claim Amount]", "{0:C2}") %>'></asp:Label>
                                         </EditItemTemplate>
                                     </dx:GridViewDataTextColumn>
+
+                                    <dx:GridViewDataTextColumn FieldName="Currency" VisibleIndex="11"
+                    ReadOnly="True" ExportWidth="100" ToolTip="Currency">
+                    <PropertiesTextEdit DisplayFormatInEditMode="True" DisplayFormatString="c2">
+                    </PropertiesTextEdit>
+                    <EditItemTemplate>
+                        <asp:Label ID="Label17" runat="server" Text='<%# Eval("[Currency]") %>'></asp:Label>
+                    </EditItemTemplate>
+                </dx:GridViewDataTextColumn>
+                <dx:GridViewDataTextColumn FieldName="ClaimAmountUSD" VisibleIndex="11"
+                    ReadOnly="True" ExportWidth="100" ToolTip="ClaimAmountUSD">
+                    <PropertiesTextEdit DisplayFormatInEditMode="True" DisplayFormatString="c2">
+                    </PropertiesTextEdit>
+                    <EditItemTemplate>
+                        <asp:Label ID="Label18" runat="server" Text='<%# Eval("[ClaimAmountUSD]") %>'></asp:Label>
+                    </EditItemTemplate>
+                </dx:GridViewDataTextColumn>
+
                                     <dx:GridViewDataTextColumn ExportWidth="80" FieldName="Recovery Type" ReadOnly="True" ShowInCustomizationForm="True" ToolTip="Recovery Type" VisibleIndex="11">
                                         <PropertiesTextEdit DisplayFormatInEditMode="True" DisplayFormatString="c2">
                                         </PropertiesTextEdit>

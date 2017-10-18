@@ -23,13 +23,16 @@
             return assoc;
         }
         function ShowClaimSummaryPopup(subDate, creditStatus) {
+            var parentWindow = window.parent;
             var height = Math.max(0, document.documentElement.clientHeight);
-            popClaims.SetHeight(height - 15);
+            parentWindow.popClaims.SetHeight(height);
             var width = Math.max(0, document.documentElement.clientWidth);
-            popClaims.SetWidth(width - 250);
-            popClaims.Hide();
-            popClaims.SetHeaderText('Claim Details');
-            popClaims.SetContentUrl('ClaimDetails.aspx?sdate=' + subDate + '&cstatus=' + creditStatus + '&height=' + height); popClaims.Show();
+            parentWindow.popClaims.SetWidth(width);
+            //parentWindow.popClaims.SetContentUrl('ClaimDetails.aspx?sdate=' + subDate + '&cstatus=' + creditStatus + '&height=' + height);
+            console.log(parentWindow);
+            //popClaims.Hide();
+            parentWindow.popClaims.SetHeaderText('Claim Details');
+            parentWindow.popClaims.SetContentUrl('ClaimDetails.aspx?sdate=' + subDate + '&cstatus=' + creditStatus + '&height=' + height); popClaims.Show();
         }
     </script>
 </head>
@@ -38,7 +41,7 @@
     <div>
         <asp:GridView ID="grdClaimSummary" runat="server" Width="100%" BackColor="White"
         BorderStyle="Solid" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="None"
-        ShowFooter="True" Font-Names="Calibri" BorderColor="#E8E8E8">
+        ShowFooter="True" Font-Names="Calibri" BorderColor="#9F9F9F">
         <AlternatingRowStyle BackColor="#F2F2F2" />
         <FooterStyle BackColor="White" Font-Bold="False" Font-Names="Arial" 
             Font-Size="8pt" ForeColor="Black" />
@@ -52,19 +55,9 @@
         <SortedDescendingHeaderStyle BackColor="#575357" />
     </asp:GridView>
     </div>
-    
-    <dx:ASPxPopupControl ID="popClaims" runat="server" ClientInstanceName="popClaims" Modal="True" PopupHorizontalAlign="WindowCenter" PopupVerticalAlign="WindowCenter" AllowDragging="True" AllowResize="True" HeaderText="Claims" RenderMode="Lightweight" ShowMaximizeButton="True">
-    <ClientSideEvents EndCallback="function(s, e) {
-	popClaims.Show();
-}" />
-    <ContentCollection>
-<dx:PopupControlContentControl ID="PopupControlContentControl1" runat="server" SupportsDisabledAttribute="True">
-        </dx:PopupControlContentControl>
-</ContentCollection>
-</dx:ASPxPopupControl>
     </form>
 </body>
-<script>
+<script type="text/javascript">
     function adjustsize() {
         var qs = getQueryStrings();
         ht = qs['height'];
